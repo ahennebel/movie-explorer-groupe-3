@@ -1,0 +1,414 @@
+{
+    "page": 1,
+    "results": [
+        {
+            "poster_path": "\/9BHUGbJYlBCYsrp4DXd9aPpAIj3.jpg",
+            "adult": false,
+            "overview": "Un chirurgien devient l'apprenti d'un sorcier après un accident qui l'a privé de l'usage de ses mains...",
+            "release_date": "2016-10-25",
+            "genre_ids": [
+                28,
+                12,
+                14,
+                878
+            ],
+            "id": 284052,
+            "original_title": "Doctor Strange",
+            "original_language": "en",
+            "title": "Doctor Strange",
+            "backdrop_path": "\/tFI8VLMgSTTU38i8TIsklfqS9Nl.jpg",
+            "popularity": 44.868401,
+            "vote_count": 893,
+            "video": false,
+            "vote_average": 6.82
+        },
+        {
+            "poster_path": "\/sQcvVlQlqqjV9r1U0kD4AptVJAd.jpg",
+            "adult": false,
+            "overview": "Lorsque de mystérieux vaisseaux venus du fond de l’espace surgissent un peu partout sur Terre, une équipe d’experts est rassemblée sous la direction de la linguiste Louise Banks afin de tenter de comprendre leurs intentions.  Face à l’énigme que constituent leur présence et leurs messages mystérieux, les réactions dans le monde sont extrêmes et l’humanité se retrouve bientôt au bord d’une guerre absolue. Louise Banks et son équipe n’ont que très peu de temps pour trouver des réponses. Pour les obtenir, la jeune femme va prendre un risque qui pourrait non seulement lui coûter la vie, mais détruire le genre humain…",
+            "release_date": "2016-11-10",
+            "genre_ids": [
+                18,
+                878
+            ],
+            "id": 329865,
+            "original_title": "Arrival",
+            "original_language": "en",
+            "title": "Premier Contact",
+            "backdrop_path": "\/wFFlaVHmQG4U43m0l3eQqHZluvn.jpg",
+            "popularity": 27.153696,
+            "vote_count": 187,
+            "video": false,
+            "vote_average": 6.74
+        },
+        {
+            "poster_path": "\/FwcMZhahdqawsZgcOMwlENHYgs.jpg",
+            "adult": false,
+            "overview": "C'est tellement jouissif d'être un salopard ! Face à une menace aussi énigmatique qu'invincible, l'agent secret Amanda Waller réunit une armada de crapules de la pire espèce. Armés jusqu'aux dents par le gouvernement, ces Super-Méchants s'embarquent alors pour une mission-suicide. Jusqu'au moment où ils comprennent qu'ils ont été sacrifiés. Vont-ils accepter leur sort ou se rebeller ?",
+            "release_date": "2016-08-02",
+            "genre_ids": [
+                28,
+                80,
+                14
+            ],
+            "id": 297761,
+            "original_title": "Suicide Squad",
+            "original_language": "en",
+            "title": "Suicide Squad",
+            "backdrop_path": "\/ndlQ2Cuc3cjTL7lTynw6I4boP4S.jpg",
+            "popularity": 27.1531,
+            "vote_count": 2517,
+            "video": false,
+            "vote_average": 5.96
+        },
+        {
+            "poster_path": "\/wp7OHP9r6ajhnnVCrVDW46hMSpa.jpg",
+            "adult": false,
+            "overview": "Hanté par un lourd passé, Mad Max estime que le meilleur moyen de survivre est de rester seul. Cependant, il se retrouve embarqué par une bande qui parcourt le désert à bord d'un véhicule militaire piloté par l'Impératrice Furiosa. Ils fuient la Citadelle où sévit le terrible Immortan Joe qui s'est fait voler un objet irremplaçable. Enragé, ce Seigneur de guerre envoie ses hommes pour traquer les rebelles impitoyablement...",
+            "release_date": "2015-05-13",
+            "genre_ids": [
+                28,
+                12,
+                878,
+                53
+            ],
+            "id": 76341,
+            "original_title": "Mad Max: Fury Road",
+            "original_language": "en",
+            "title": "Mad Max: Fury Road",
+            "backdrop_path": "\/tbhdm8UJAb4ViCTsulYFL3lxMCd.jpg",
+            "popularity": 25.603809,
+            "vote_count": 5714,
+            "video": false,
+            "vote_average": 7.18
+        },
+        {
+            "poster_path": "\/4ZsZfgb6Z4vqIfWoPArbSFTkGFp.jpg",
+            "adult": false,
+            "overview": "La vie secrète que mènent nos animaux domestiques une fois que nous les laissons seuls à la maison pour partir au travail ou à l’école.",
+            "release_date": "2016-06-18",
+            "genre_ids": [
+                12,
+                16,
+                35,
+                10751
+            ],
+            "id": 328111,
+            "original_title": "The Secret Life of Pets",
+            "original_language": "en",
+            "title": "Comme des bêtes",
+            "backdrop_path": "\/lubzBMQLLmG88CLQ4F3TxZr2Q7N.jpg",
+            "popularity": 18.803193,
+            "vote_count": 1033,
+            "video": false,
+            "vote_average": 5.99
+        },
+        {
+            "poster_path": "\/vNk7ZWwVdoKAczJloHU3aEJIJjs.jpg",
+            "adult": false,
+            "overview": "1926. Norbert Dragonneau rentre à peine d'un périple à travers le monde où il a répertorié un bestiaire extraordinaire de créatures fantastiques. Il pense faire une courte halte à New York mais une série d'événements et de rencontres inattendues risquent de prolonger son séjour. C'est désormais le monde de la magie qui est menacé.",
+            "release_date": "2016-11-16",
+            "genre_ids": [
+                10751,
+                14,
+                12
+            ],
+            "id": 259316,
+            "original_title": "Fantastic Beasts and Where to Find Them",
+            "original_language": "en",
+            "title": "Les Animaux fantastiques",
+            "backdrop_path": "\/6I2tPx6KIiBB4TWFiWwNUzrbxUn.jpg",
+            "popularity": 17.712244,
+            "vote_count": 101,
+            "video": false,
+            "vote_average": 7.25
+        },
+        {
+            "poster_path": "\/hlcdIjx6dH9vGZTZdsh77FyomB8.jpg",
+            "adult": false,
+            "overview": "Reacher retourne dans sa base militaire de Virginie pour dîner avec une collègue. Mais il apprend que celle-ci a été arrêtée et que lui-même est accusé de meurtres.",
+            "release_date": "2016-10-19",
+            "genre_ids": [
+                53,
+                28,
+                80,
+                18,
+                9648
+            ],
+            "id": 343611,
+            "original_title": "Jack Reacher: Never Go Back",
+            "original_language": "en",
+            "title": "Jack Reacher : Never Go Back",
+            "backdrop_path": "\/4ynQYtSEuU5hyipcGkfD6ncwtwz.jpg",
+            "popularity": 17.174435,
+            "vote_count": 509,
+            "video": false,
+            "vote_average": 4.39
+        },
+        {
+            "poster_path": "\/hHkaT3MA2AjnTnIYBoIkIIrpe8d.jpg",
+            "adult": false,
+            "overview": "Dory, le poisson chirurgien bleu amnésique, retrouve ses amis Nemo et Marlin. Tous trois se lancent à la recherche du passé de Dory. Pourra-t-elle retrouver ses souvenirs ? Qui sont ses parents ? Et où a-t-elle bien pu apprendre à parler la langue des baleines ?",
+            "release_date": "2016-06-16",
+            "genre_ids": [
+                16,
+                10751
+            ],
+            "id": 127380,
+            "original_title": "Finding Dory",
+            "original_language": "en",
+            "title": "Le Monde de Dory",
+            "backdrop_path": "\/iWRKYHTFlsrxQtfQqFOQyceL83P.jpg",
+            "popularity": 15.609095,
+            "vote_count": 1346,
+            "video": false,
+            "vote_average": 6.65
+        },
+        {
+            "poster_path": "\/ehjpo1YkXN3jiVt5L0SJMbTDAtQ.jpg",
+            "adult": false,
+            "overview": "Steve Rogers est désormais à la tête des Avengers, dont la mission est de protéger l'humanité. À la suite d'une de leurs interventions qui a causé d'importants dégâts collatéraux, le gouvernement décide de mettre en place un organisme de commandement et de supervision.  Cette nouvelle donne provoque une scission au sein de l'équipe : Steve Rogers reste attaché à sa liberté de s'engager sans ingérence gouvernementale, tandis que d'autres se rangent derrière Tony Stark, qui contre toute attente, décide de se soumettre au gouvernement...",
+            "release_date": "2016-04-27",
+            "genre_ids": [
+                28,
+                878,
+                53
+            ],
+            "id": 271110,
+            "original_title": "Captain America: Civil War",
+            "original_language": "en",
+            "title": "Captain America - Civil War",
+            "backdrop_path": "\/m5O3SZvQ6EgD5XXXLPIP1wLppeW.jpg",
+            "popularity": 15.181354,
+            "vote_count": 3497,
+            "video": false,
+            "vote_average": 6.78
+        },
+        {
+            "poster_path": "\/uysxMcqqUEIiN1vjg2MsNok89Lc.jpg",
+            "adult": false,
+            "overview": "Arthur Bishop pensait qu'il avait mis son passé de tueur à gages derrière lui. Il coule maintenant des jours heureux avec sa compagne dans l'anonymat. Mais quand son plus redoutable ennemi enlève sa femme, il est obligé de parcourir le monde pour remplir trois assassinats impossibles. Et comme toujours, il doit faire en sorte que ses exécutions ressemblent à des accidents. Une course contre la montre sans relâche s'engage.",
+            "release_date": "2016-08-25",
+            "genre_ids": [
+                28,
+                80,
+                53
+            ],
+            "id": 278924,
+            "original_title": "Mechanic: Resurrection",
+            "original_language": "en",
+            "title": "Le Flingueur 2",
+            "backdrop_path": "\/6kMu4vECAyTpj2Z7n8viJ4RAaYh.jpg",
+            "popularity": 14.734978,
+            "vote_count": 526,
+            "video": false,
+            "vote_average": 4.68
+        },
+        {
+            "poster_path": "\/tBhVwyhBBCGTHvkiUhMv5qlhZpW.jpg",
+            "adult": false,
+            "overview": "Le leader de la résistance John Connor envoie le sergent Kyle Reese dans le passé pour protéger sa mère, Sarah Connor et préserver l'avenir de l'humanité. Des événements inattendus provoquent une fracture temporelle et Sarah et Kyle se retrouvent dans une nouvelle version du passé. Ils y découvrent un allié inattendu : le Guardian. Ensemble, ils doivent faire face à un nouvel ennemi. La menace a changé de visage.",
+            "release_date": "2015-06-23",
+            "genre_ids": [
+                878,
+                28,
+                53,
+                12
+            ],
+            "id": 87101,
+            "original_title": "Terminator Genisys",
+            "original_language": "en",
+            "title": "Terminator Genisys",
+            "backdrop_path": "\/bIlYH4l2AyYvEysmS2AOfjO7Dn8.jpg",
+            "popularity": 13.91564,
+            "vote_count": 2449,
+            "video": false,
+            "vote_average": 5.88
+        },
+        {
+            "poster_path": "\/5qmWTVHxKOeP5HjIf0fsigCuHHm.jpg",
+            "adult": false,
+            "overview": "La traque de Jason Bourne par les services secrets américains se poursuit. Des îles Canaries à Londres en passant par Las Vegas...",
+            "release_date": "2016-07-27",
+            "genre_ids": [
+                28,
+                53
+            ],
+            "id": 324668,
+            "original_title": "Jason Bourne",
+            "original_language": "en",
+            "title": "Jason Bourne",
+            "backdrop_path": "\/AoT2YrJUJlg5vKE3iMOLvHlTd3m.jpg",
+            "popularity": 13.250721,
+            "vote_count": 1029,
+            "video": false,
+            "vote_average": 5.53
+        },
+        {
+            "poster_path": "\/jZASQ15M6KUaRvHJhbUButeATDi.jpg",
+            "adult": false,
+            "overview": "",
+            "release_date": "2016-07-11",
+            "genre_ids": [
+                878,
+                28
+            ],
+            "id": 406285,
+            "original_title": "The Last Starship",
+            "original_language": "en",
+            "title": "The Last Starship",
+            "backdrop_path": null,
+            "popularity": 13.188404,
+            "vote_count": 19,
+            "video": false,
+            "vote_average": 3.32
+        },
+        {
+            "poster_path": "\/riXvkUC2zzj47RXtXN02XCdArIZ.jpg",
+            "adult": false,
+            "overview": "Trois adolescents planifient un braquage. Leur objectif : dérober la fortune d'un aveugle. Mais une fois sur place, rien ne se passe comme prévu...",
+            "release_date": "2016-08-25",
+            "genre_ids": [
+                80,
+                27,
+                53
+            ],
+            "id": 300669,
+            "original_title": "Don't Breathe",
+            "original_language": "en",
+            "title": "Don't Breathe - La maison des ténèbres",
+            "backdrop_path": "\/bCThHXQ3aLLDU3KFST0rC8mTan5.jpg",
+            "popularity": 12.609214,
+            "vote_count": 424,
+            "video": false,
+            "vote_average": 6.26
+        },
+        {
+            "poster_path": "\/wOQCdB8yzYsy1kqZfgQhIaSXF9r.jpg",
+            "adult": false,
+            "overview": "Dans un monde post-apocalyptique où la société a été réorganisée autour de 5 factions (Audacieux, Érudits, Altruistes, Sincères et Fraternels), Tris a mis à jour un complot mené par la faction dominante, les Érudits, dirigés par Janine. Abandonnant une ville à feu et à sang, à la recherche d’alliés, Tris et Four sont désormais traqués par les autorités. Janine décrète la loi martiale pour anéantir les Divergents, tandis que la guerre entre les factions prend de l’ampleur. Pourquoi les Divergents sont-ils une menace pour la société ? La découverte d’un objet mystérieux, hérité du passé, pourrait bien bouleverser l’équilibre des forces…",
+            "release_date": "2015-03-18",
+            "genre_ids": [
+                12,
+                878,
+                53
+            ],
+            "id": 262500,
+            "original_title": "Insurgent",
+            "original_language": "en",
+            "title": "Divergente 2 : L'Insurrection",
+            "backdrop_path": "\/L5QRL1O3fGs2hH1LbtYyVl8Tce.jpg",
+            "popularity": 11.960019,
+            "vote_count": 2292,
+            "video": false,
+            "vote_average": 6.35
+        },
+        {
+            "poster_path": "\/qAr3kvQeKu1UMOOrt50kUqEkdlr.jpg",
+            "adult": false,
+            "overview": "Dans un futur proche, face à une Terre exsangue, un groupe d'explorateurs utilise un vaisseau interstellaire pour franchir un trou de ver permettant de parcourir des distances jusque-là infranchissables. Leur but :  trouver un nouveau foyer pour l'humanité.",
+            "release_date": "2014-11-05",
+            "genre_ids": [
+                12,
+                18,
+                878
+            ],
+            "id": 157336,
+            "original_title": "Interstellar",
+            "original_language": "en",
+            "title": "Interstellar",
+            "backdrop_path": "\/xu9zaAevzQ5nnrsXN6JcahLnG4i.jpg",
+            "popularity": 11.915139,
+            "vote_count": 6032,
+            "video": false,
+            "vote_average": 8.06
+        },
+        {
+            "poster_path": "\/lDJPiN44CrbSno9mLqdw0wgOBN7.jpg",
+            "adult": false,
+            "overview": "Depuis les origines de la civilisation, Apocalypse, le tout premier mutant, a absorbé de nombreux pouvoirs, devenant à la fois immortel et invincible, adoré comme un dieu. Se réveillant après un sommeil de plusieurs milliers d'années et désillusionné par le monde qu'il découvre, il réunit de puissants mutants dont Magneto pour nettoyer l'humanité et régner sur un nouvel ordre. Raven et Professeur X vont joindre leurs forces pour affronter leur plus dangereux ennemi et sauver l'humanité d'une destruction totale.",
+            "release_date": "2016-05-18",
+            "genre_ids": [
+                28,
+                12,
+                14,
+                878
+            ],
+            "id": 246655,
+            "original_title": "X-Men: Apocalypse",
+            "original_language": "en",
+            "title": "X-Men : Apocalypse",
+            "backdrop_path": "\/oQWWth5AOtbWG9o8SCAviGcADed.jpg",
+            "popularity": 11.914387,
+            "vote_count": 2252,
+            "video": false,
+            "vote_average": 6.14
+        },
+        {
+            "poster_path": "\/aTxRptK9fG3a0Tmcym3h4LXFOlm.jpg",
+            "adult": false,
+            "overview": "Après le décès de son fondateur John Hammond, la société de biotechnologie InGen a été rachetée par Simon Masrani, PDG de la Masrani Global Corporation1.  Deux décennies après les événements tragiques de 1993, un nouveau parc a ouvert ses portes sur Isla Nublar, au large du Costa Rica. C'est plus de vingt mille visiteurs qui débarquent chaque jour à « Jurassic World », le « plus grand parc à thèmes jamais construit dans l'histoire humaine » pour profiter pleinement du cadre idyllique de l'île et de ses attractions. Les scientifiques de la réserve biologique, sous la direction du Dr Henry Wu, étudient le comportement des animaux, des dinosaures vivants recréés à partir de leur ADN fossilisé dans de lʼambre. Mais alors que tout le monde croyait les leçons du passé assimilées, un nouvel incident éclate...",
+            "release_date": "2015-06-09",
+            "genre_ids": [
+                28,
+                12,
+                878,
+                53
+            ],
+            "id": 135397,
+            "original_title": "Jurassic World",
+            "original_language": "en",
+            "title": "Jurassic World",
+            "backdrop_path": "\/dkMD5qlogeRMiEixC4YNPUvax2T.jpg",
+            "popularity": 11.897998,
+            "vote_count": 5233,
+            "video": false,
+            "vote_average": 6.58
+        },
+        {
+            "poster_path": "\/7jAXeNgTPUY00txdsc5JloGCMBN.jpg",
+            "adult": false,
+            "overview": "Un génie de la robotique nommé Hiro Hamada, se retrouve embarqué dans un complot criminel qui menace de détruire la paisible ville high-tech de San Fransokyo. Avec l’aide d’un de ses plus proche compagnon – un robot nommé Baymax –, Hiro s’associe à une équipe de jeunes amateurs qui s’est donnée pour mission de sauver la population.",
+            "release_date": "2014-10-24",
+            "genre_ids": [
+                12,
+                10751,
+                16,
+                28,
+                35
+            ],
+            "id": 177572,
+            "original_title": "Big Hero 6",
+            "original_language": "en",
+            "title": "Les Nouveaux Héros",
+            "backdrop_path": "\/2BXd0t9JdVqCp9sKf6kzMkr7QjB.jpg",
+            "popularity": 11.883843,
+            "vote_count": 3942,
+            "video": false,
+            "vote_average": 7.81
+        },
+        {
+            "poster_path": "\/dZKCDToIub9VoUNtHasVEJblPqA.jpg",
+            "adult": false,
+            "overview": "Une aventure toujours plus épique de l’USS Enterprise et de son audacieux équipage. L’équipe explore les confins inexplorés de l'espace, faisant face chacun, comme la Fédération tout entière, à une nouvelle menace.",
+            "release_date": "2016-07-07",
+            "genre_ids": [
+                28,
+                12,
+                878,
+                53
+            ],
+            "id": 188927,
+            "original_title": "Star Trek Beyond",
+            "original_language": "en",
+            "title": "Star Trek : Sans limites",
+            "backdrop_path": "\/6uBlEXZCUHM15UNZqNig17VdN4m.jpg",
+            "popularity": 11.675346,
+            "vote_count": 1114,
+            "video": false,
+            "vote_average": 6.29
+        }
+    ],
+    "total_results": 299254,
+    "total_pages": 14963
+}

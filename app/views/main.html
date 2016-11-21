@@ -1,0 +1,13 @@
+<!-- Ce fichier HTML est le template de la page d'accueil :
+Le code ci-dessous affiche une liste de films grâce à la balise ng-repeat.
+Pour afficher une propriété du film il faut utliser la variable movie, ex : movie.title.
+Ce template est associé à un controleur nommé main (voir app.js).
+Ce fichier modifié/complété pour construire n'importe quelle structure html/css.
+-->
+
+<div class="movie-list">
+  <div class="movie-item" ng-repeat="movie in main.movies track by movie.id">
+    <a ng-href="#/movie/{{movie.id}}"><div ng-bind="movie.title"></div></a>
+    <div ng-bind="movie.overview"></div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<!-- Cette vue affiche une fiche descriptive pour le film sélectionné.
+Le controleur moveCtrl contient une propriété movie qui est le film selectionné.
+Si il manque des propriétés/données, elles peuvent être inscrite en dur dans le code HTML. 
+Ex : utiliser du lorem ipsum pour les commentaires.
+-->
+
+<p>This is the movie view.</p>
+<div ng-bind="movieCtrl.movie.title"></div>
+<div ng-bind="movieCtrl.movie.overview"></div>
+<div class="review-list">
+    <div class="review" ng-repeat="review in movieCtrl.movie.reviews.results">
+        <div>Author : <span ng-bind="review.author"></span></div>
+        <div ng-bind="review.content | limitTo:140"></div><!-- LimitTo pour éviter les commentaires trop long, il faudra surrement utiliser une solution plus propre -->
+        -----
+    </div>
+</div>
+<div class="image-list">
+    <img ng-src="{{ movieCtrl.getImageURL(image,'w300') }}" ng-repeat="image in movieCtrl.movie.images.backdrops" />
+</div>
