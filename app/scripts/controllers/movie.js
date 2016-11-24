@@ -22,6 +22,16 @@ angular.module('movieExplorerApp')
       ctrl.configuration = result;
     });
 
+    ctrl.getPosterURL = function(size)
+    {
+      if(ctrl.configuration)
+      {
+        return ctrl.configuration.images.secure_base_url + size + ctrl.movie.poster_path;
+      } else {
+        return null;
+      }
+    }
+
     ctrl.getImageURL = function(image, size)
     {
       if(ctrl.configuration)
