@@ -1,17 +1,33 @@
 @import 'bower_components/bourbon/app/assets/stylesheets/_bourbon.scss';
 
-/* Variables */
+/* Variables
+*************************************************/
 $title-color: #3675db;
 
-/* Mixins */
+/* Mixins 
+*************************************************/
 
-/* Bootstrap Overrides */
+
+/*****************************************************************/
+/* eXtra Small devices XS (phones, less than 768px)              */
+/* No media query since this is the default in Bootstrap         */
+/*****************************************************************/
+.navbar-brand:after {
+  content:"XS";
+  margin-left: 10px;
+  padding: 2px 5px;
+  background: purple;
+  color: white;
+}
+
+/* Bootstrap Overrides
+*************************************************/
 .navbar {
   margin-bottom: 0;
 }
 
-/* Home Style */
-
+/* Home Style 
+*************************************************/
 .movie-item {
   a {
     div {
@@ -45,11 +61,51 @@ $title-color: #3675db;
 }
 
 
-/* Page Movie Style */
-
+/* Page Movie Style 
+*************************************************/
 .page-movie-header {
   width: 100%;
   height: 100px;
   background: url(images/bg.jpg) no-repeat center center;
   background-size: cover;
+}
+
+
+/*****************************************************************/
+/* SMall devices SM (tablets, 768px and up)                      */
+/*****************************************************************/
+@media screen and (min-width: 768px) {
+  .navbar-brand:after {
+    content:"SM";
+    margin-left: 10px;
+    padding: 2px 5px;
+    background: red;
+    color: white;
+  }
+}
+
+/*****************************************************************/
+/* MeDium devices MD (desktops, 992px and up)                    */
+/*****************************************************************/
+@media screen and (min-width: 992px) {
+  .navbar-brand:after {
+    content:"MD";
+    margin-left: 10px;
+    padding: 2px 5px;
+    background: orange;
+    color: white;
+  }
+}
+
+/*****************************************************************/
+/* LarGe devices LG (large desktops, 1200px and up)              */
+/*****************************************************************/
+@media screen and (min-width: 1200px) {
+  .navbar-brand:after {
+    content:"LG";
+    margin-left: 10px;
+    padding: 2px 5px;
+    background: yellow;
+    color: black;
+  }
 }

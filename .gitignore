@@ -1,5 +1,7 @@
 # Theme avec SASS ou plugin node.js (Gulp)
 **/.sass-cache/**
 **/node_modules/**
+**/bower_components/**
 node_modules/
+bower_components/
 npm-debug.log
