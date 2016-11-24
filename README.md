@@ -1,5 +1,7 @@
 # movie-explorer
 
+Fork of [Movie Explorer Example](https://github.com/MatthieuG9/movie-explorer-example) by **Groupe 3** (Adrien, Aurélie, Thomas, Olivier)
+
 This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
 version 0.15.1.
 
