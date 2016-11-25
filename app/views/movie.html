@@ -58,14 +58,14 @@ Ex : utiliser du lorem ipsum pour les commentaires.
 			<div class="page-movie--descri-source page-movie--descri-source1">Sens Critique</div>
 			<div class="page-movie--descri-source page-movie--descri-source2">Rotten Tomatoes</div>
 			<div class="page-movie--descri-source page-movie--descri-source3">Allociné</div>
-			<div class="page-movie--descri-source-param">
+			<a ng-href="#/parameters"><div class="page-movie--descri-source-param">
 				<img id="poster-movie--descri-param" src="../images/settings.svg" />
-			</div>
+			</div></a>
 		</div>
 	</div>
 
 	<div class="col-xs-12 no-gutters page-movie--casting">
-		<div class="page-movie--bloc-header page-movie--casting-header">Casting<img id="poster-movie--casting-param" class="page-movie--bloc-param" src="../images/settings.svg"></div>
+		<div class="page-movie--bloc-header page-movie--casting-header">Casting<a ng-href="#/parameters"><img id="poster-movie--casting-param" class="page-movie--bloc-param" src="../images/settings.svg"></a></div>
 		<div class="page-movie--casting-actors">
 			<div class="page-movie--casting-actors-container">
 				<div class="page-movie--casting-actors--bloc">
@@ -106,11 +106,11 @@ Ex : utiliser du lorem ipsum pour les commentaires.
 				</div>
 			</div>
 		</div>
-		<button class="page-movie--bloc-more page-movie--casting-more btn">Casting et équipe complets</button>
+		<a ng-href="#/movie/{{movieCtrl.movie.id}}/casting"><button class="page-movie--bloc-more page-movie--casting-more btn">Casting et équipe complets</button></a>
 	</div>
 
 	<div class="col-xs-12 no-gutters page-movie--reviews page-movie--critiques">
-		<div class="page-movie--bloc-header page-movie--reviews-header">Critiques<img id="page-movie--reviews-param" class="page-movie--bloc-param" src="../images/settings.svg"></div>
+		<div class="page-movie--bloc-header page-movie--reviews-header">Critiques<a ng-href="#/parameters"><img id="page-movie--reviews-param" class="page-movie--bloc-param" src="../images/settings.svg"></a></div>
 		<div class="col-xs-12 col-md-6 no-gutters">
 			<div class="page-movie--reviews-most age-movie--reviews-most--high"><img src="../images/plus.svg">La critique positive la + populaire</div>
 			<div class="page-movie--reviews-container">
@@ -151,7 +151,7 @@ Ex : utiliser du lorem ipsum pour les commentaires.
 	</div>
 
 	<div class="col-xs-12 no-gutters page-movie--reviews page-movie--com">
-	<div class="page-movie--bloc-header page-movie--reviews-header">Commentaires<img id="page-movie--com-param" class="page-movie--bloc-param" src="../images/settings.svg"></div>
+	<div class="page-movie--bloc-header page-movie--reviews-header">Commentaires<a ng-href="#/parameters"><img id="page-movie--com-param" class="page-movie--bloc-param" src="../images/settings.svg"></a></div>
 		<div class="col-xs-12 no-gutters col-md-6 page-movie--reviews-container" ng-repeat="review in movieCtrl.movie.reviews.results">
 			<div class="page-movie--reviews-bloc"  ng-bind="review.content | limitTo:140">
 			</div>
@@ -167,7 +167,7 @@ Ex : utiliser du lorem ipsum pour les commentaires.
 	</div>
 	
 	<div class="col-xs-12 no-gutters page-movie--trivias">
-	<div class="page-movie--bloc-header page-movie--trivias-header">Commentaires<img id="page-movie--trivias-param" class="page-movie--bloc-param" src="../images/settings.svg"></div>
+	<div class="page-movie--bloc-header page-movie--trivias-header">Commentaires<a ng-href="#/parameters"><img id="page-movie--trivias-param" class="page-movie--bloc-param" src="../images/settings.svg"></a></div>
 		<div class="col-xs-12 col-md-6 no-gutters page-movie--trivias-container">
 			<h4 class="page-movie--trivias--title">Lorem Ipsum Dolorem</h4>
 			<div class="page-movie--trivias--text">
@@ -193,7 +193,7 @@ Ex : utiliser du lorem ipsum pour les commentaires.
 	</div>
 
 	<div class="col-xs-12 no-gutters page-movie--medias">
-	<div class="page-movie--bloc-header page-movie--medias-header">Médias<img id="page-movie--medias-param" class="page-movie--bloc-param" src="../images/settings.svg"></div>
+	<div class="page-movie--bloc-header page-movie--medias-header">Médias<a ng-href="#/parameters"><img id="page-movie--medias-param" class="page-movie--bloc-param" src="../images/settings.svg"></a></div>
 		<div class="col-xs-6 col-sm-4 col-lg-3 no-gutters page-movie--medias-img" ng-repeat="image in movieCtrl.movie.images.backdrops">
 			<img  ng-src="{{ movieCtrl.getImageURL(image,'w300') }}"/>
 		</div>

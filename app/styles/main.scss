@@ -24,6 +24,13 @@ $h6: 12px;
   padding-left: 0;
 }
 
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: rgba(0,0,0,0.6);
+}
+
 /* Mixins 
 *************************************************/
 @mixin flex-center($p){ //h > horizontal | v > vertical | b > both

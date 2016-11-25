@@ -29,6 +29,16 @@ angular
         controller: 'MovieCtrl',
         controllerAs: 'movieCtrl'
       })
+      .when('/movie/:movieId/casting', {
+        templateUrl: 'views/casting.html',
+        controller: 'MovieCtrl',
+        controllerAs: 'movieCtrl'
+      })
+      .when('/parameters', {
+        templateUrl: 'views/parameters.html',
+        // controller: 'MovieCtrl',
+        // controllerAs: 'movieCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
