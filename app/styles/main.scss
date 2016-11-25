@@ -162,7 +162,8 @@ $h6: 12px;
         @include flex-center(b);
         background-color: $color-gray-light;
         padding: 4px;
-        min-height: 48px;
+        min-height: 42px;
+        font-size: $h6;
       }
       &--note {
         padding: 6px;
@@ -186,6 +187,7 @@ $h6: 12px;
     @include flex-center(b);
     padding: 4px;
     text-align: center;
+    font-size: $h6;
     background-color: $color-gray-lighter;
     &:hover {
       cursor: pointer;
@@ -202,6 +204,61 @@ $h6: 12px;
         }
       }
     }
+  }
+}
+
+.page-movie--casting {
+  text-align: center;
+  overflow: none;
+  &-actors {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 0 6px;
+    overflow-x: scroll;
+    &-container {
+      width: 400%;
+    }
+    &--bloc {
+      display: inline-block;
+      float: left;
+      padding: 0 8px;
+      &-photo {
+        width: 135px;
+      }
+    }
+  }
+}
+
+.page-movie--reviews {
+  &-most {
+    @include flex-center(v);
+    & > img {
+      height: 20px;
+      margin-right: 8px;
+    }
+  }
+  &-bloc {
+    border: solid 2px $color-gray-lighter;
+    padding: 6px 10px 10px;
+  }
+  &-details {
+    @include flex-center(v);
+    &--photo {
+      height: 30px;
+    }
+    &--texts {
+      flex:1;
+      padding: 6px;
+    }
+    &--source {
+      font-size: $h6;
+    }
+  }
+}
+
+.page-movie--trivias {
+  &--source {
+    font-size: $h6;
   }
 }
 

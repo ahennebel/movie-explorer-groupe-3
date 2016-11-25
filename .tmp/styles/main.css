@@ -121,7 +121,8 @@
         align-items: center;
         background-color: #AAA;
         padding: 4px;
-        min-height: 48px; }
+        min-height: 42px;
+        font-size: 12px; }
       .page-movie--notes-source-bloc--note {
         padding: 6px;
         font-size: 18px; }
@@ -142,6 +143,7 @@
   align-items: center;
   padding: 4px;
   text-align: center;
+  font-size: 12px;
   background-color: #CCC; }
   .page-movie--descri-source:hover {
     cursor: pointer;
@@ -157,6 +159,50 @@
       .page-movie--descri-source-param > img:hover {
         cursor: pointer;
         opacity: 0.6; }
+
+.page-movie--casting {
+  text-align: center;
+  overflow: none; }
+  .page-movie--casting-actors {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 0 6px;
+    overflow-x: scroll; }
+    .page-movie--casting-actors-container {
+      width: 400%; }
+    .page-movie--casting-actors--bloc {
+      display: inline-block;
+      float: left;
+      padding: 0 8px; }
+      .page-movie--casting-actors--bloc-photo {
+        width: 135px; }
+
+.page-movie--reviews-most {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .page-movie--reviews-most > img {
+    height: 20px;
+    margin-right: 8px; }
+
+.page-movie--reviews-bloc {
+  border: solid 2px #CCC;
+  padding: 6px 10px 10px; }
+
+.page-movie--reviews-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .page-movie--reviews-details--photo {
+    height: 30px; }
+  .page-movie--reviews-details--texts {
+    flex: 1;
+    padding: 6px; }
+  .page-movie--reviews-details--source {
+    font-size: 12px; }
+
+.page-movie--trivias--source {
+  font-size: 12px; }
 
 .page-movie--bloc-header {
   position: relative;

@@ -66,18 +66,127 @@ Ex : utiliser du lorem ipsum pour les commentaires.
 
 	<div class="col-xs-12 no-gutters page-movie--casting">
 		<div class="page-movie--bloc-header page-movie--casting-header">Casting<img id="poster-movie--casting-param" class="page-movie--bloc-param" src="../images/settings.svg"></div>
-
+		<div class="page-movie--casting-actors">
+			<div class="page-movie--casting-actors-container">
+				<div class="page-movie--casting-actors--bloc">
+					<img class="page-movie--casting-actors--bloc-photo" src="../images/Benedict_Cumberbatch.jpg" />
+					<div class="page-movie--casting-actors--bloc-name">Benedict Cumberbatch</div>
+				</div>
+				<div class="page-movie--casting-actors--bloc">
+					<img class="page-movie--casting-actors--bloc-photo" src="../images/Tilda_Swinton.jpg" />
+					<div class="page-movie--casting-actors--bloc-name">Tilda Swinton</div>
+				</div>
+				<div class="page-movie--casting-actors--bloc">
+					<img class="page-movie--casting-actors--bloc-photo" src="../images/Benedict_Wong.jpg" />
+					<div class="page-movie--casting-actors--bloc-name">Benedict Wong</div>
+				</div>
+				<div class="page-movie--casting-actors--bloc">
+					<img class="page-movie--casting-actors--bloc-photo" src="../images/Mads_Mikkelsen.jpg" />
+					<div class="page-movie--casting-actors--bloc-name">Mads Mikkelsen</div>
+				</div>
+				<div class="page-movie--casting-actors--bloc">
+					<img class="page-movie--casting-actors--bloc-photo" src="../images/Rachel_Mc_Adams.jpg" />
+					<div class="page-movie--casting-actors--bloc-name">Rachel Mc Adams</div>
+				</div>
+				<div class="page-movie--casting-actors--bloc">
+					<img class="page-movie--casting-actors--bloc-photo" src="../images/Chris_Hemsworth.jpg" />
+					<div class="page-movie--casting-actors--bloc-name">Chris Hemsworth</div>
+				</div>
+				<div class="page-movie--casting-actors--bloc">
+					<img class="page-movie--casting-actors--bloc-photo" src="../images/Scott_Adkins.jpg" />
+					<div class="page-movie--casting-actors--bloc-name">Scott Adkins</div>
+				</div>
+				<div class="page-movie--casting-actors--bloc">
+					<img class="page-movie--casting-actors--bloc-photo" src="../images/Benjamin_Bratt.jpg" />
+					<div class="page-movie--casting-actors--bloc-name">Benjamin Bratt</div>
+				</div>
+				<div class="page-movie--casting-actors--bloc">
+					<img class="page-movie--casting-actors--bloc-photo" src="../images/Michael_Stuhlbarg.jpg" />
+					<div class="page-movie--casting-actors--bloc-name">Michael Stuhlbarg</div>
+				</div>
+			</div>
+		</div>
+		<button class="page-movie--casting-more btn">Casting et équipe complets</button>
 	</div>
 
-	<div class="review-list">
-	    <div class="review" ng-repeat="review in movieCtrl.movie.reviews.results">
-	        <div>Author : <span ng-bind="review.author"></span></div>
-	        <div ng-bind="review.content | limitTo:140"></div><!-- LimitTo pour éviter les commentaires trop long, il faudra surrement utiliser une solution plus propre -->
-	        -----
-	    </div>
-	</div>
-	<div class="image-list">
-	    <img ng-src="{{ movieCtrl.getImageURL(image,'w300') }}" ng-repeat="image in movieCtrl.movie.images.backdrops" />
+	<div class="col-xs-12 no-gutters page-movie--reviews">
+		<div class="page-movie--bloc-header page-movie--reviews">reviews<img id="page-movie--reviews-param" class="page-movie--bloc-param" src="../images/settings.svg"></div>
+		<div class="page-movie--reviews-most age-movie--reviews-most--high"><img src="../images/plus.svg">La critique positive la + populaire</div>
+		<div class="page-movie--reviews-container">
+			<div class="page-movie--reviews-bloc">
+				<h4 class="page-movie--reviews-bloc--title">Lorem Ipsum Dolorem</h4>
+				<div class="page-movie--reviews-bloc--text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque erat erat, porttitor eu erat eu, auctor ornare orci. Integer ante dui, rhoncus et ex a, sagittis ultrices leo. Vivamus posuere eget urna eget ultrices. Vivamus nulla leo, faucibus a tincidunt et, mattis at nunc. Nunc euismod imperdiet imperdiet..
+				</div>
+			</div>
+			<div class="page-movie--reviews-details">
+				<img class="page-movie--reviews-details--photo" src="../images/Chris_Hemsworth.jpg" />
+				<div class="page-movie--reviews-details--texts">
+					PseuDOless (4/5) - 1. nov. 16
+				</div>
+				<button class="page-movie--reviews-details--source btn">Allociné</button>
+			</div>
+		</div>
+		<div class="page-movie--reviews-most age-movie--reviews-most--low"><img src="../images/minus.svg">La critique negative la + populaire</div>
+		<div class="page-movie--reviews-container">
+			<div class="page-movie--reviews-bloc">
+				<h4 class="page-movie--reviews-bloc--title">Lorem Ipsum Dolorem</h4>
+				<div class="page-movie--reviews-bloc--text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque erat erat, porttitor eu erat eu, auctor ornare orci. Integer ante dui, rhoncus et ex a, sagittis ultrices leo. Vivamus posuere eget urna eget ultrices. Vivamus nulla leo, faucibus a tincidunt et, mattis at nunc. Nunc euismod imperdiet imperdiet..
+				</div>
+			</div>
+			<div class="page-movie--reviews-details">
+				<img class="page-movie--reviews-details--photo" src="../images/Chris_Hemsworth.jpg" />
+				<div class="page-movie--reviews-details--texts">
+					PseuDOless (4/5) - 1. nov. 16
+				</div>
+				<button class="page-movie--reviews-details--source btn">Allociné</button>
+			</div>
+		</div>	
 	</div>
 
+	<div class="col-xs-12 no-gutters page-movie--com">
+	<div class="page-movie--bloc-header page-movie--com">Commentaires<img id="page-movie--com-param" class="page-movie--bloc-param" src="../images/settings.svg"></div>
+		<div class="page-movie--reviews-container" ng-repeat="review in movieCtrl.movie.reviews.results">
+			<div class="page-movie--reviews-bloc"  ng-bind="review.content | limitTo:140">
+			</div>
+			<div class="page-movie--reviews-details">
+				<img class="page-movie--reviews-details--photo" src="../images/Chris_Hemsworth.jpg" />
+				<div class="page-movie--reviews-details--texts">
+					{{review.author}} (4/5) - 1. nov. 16
+				</div>
+				<button class="page-movie--reviews-details--source btn">Allociné</button>
+			</div>	
+		</div>
+	</div>
+	
+	<div class="col-xs-12 no-gutters page-movie--trivias">
+	<div class="page-movie--bloc-header page-movie--trivias">Commentaires<img id="page-movie--trivias-param" class="page-movie--bloc-param" src="../images/settings.svg"></div>
+		<div class="page-movie--trivias-container">
+			<h4 class="page-movie--trivias--title">Lorem Ipsum Dolorem</h4>
+			<div class="page-movie--trivias--text">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque erat erat, porttitor eu erat eu, auctor ornare orci. Integer ante dui, rhoncus et ex a, sagittis ultrices leo.
+			</div>
+			<button class="page-movie--trivias--source btn">Allociné</button>
+		</div>
+		<div class="page-movie--trivias-container">
+			<h4 class="page-movie--trivias--title">Lorem Ipsum Dolorem</h4>
+			<div class="page-movie--trivias--text">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque erat erat, porttitor eu erat eu, auctor ornare orci. Integer ante dui, rhoncus et ex a, sagittis ultrices leo.
+			</div>
+			<button class="page-movie--trivias--source btn">Allociné</button>
+		</div>
+		<div class="page-movie--trivias-container">
+			<h4 class="page-movie--trivias--title">Lorem Ipsum Dolorem</h4>
+			<div class="page-movie--trivias--text">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque erat erat, porttitor eu erat eu, auctor ornare orci. Integer ante dui, rhoncus et ex a, sagittis ultrices leo.
+			</div>
+			<button class="page-movie--trivias--source btn">Allociné</button>
+		</div>
+	</div>
+
+	<div class="col-xs-12 no-gutters page-movie--medias">
+	<div class="page-movie--bloc-header page-movie--medias">Médias<img id="page-movie--medias-param" class="page-movie--bloc-param" src="../images/settings.svg"></div>
+		<img class="col-xs-6 col-sm-4 no-gutters page-movie--medias-img" ng-src="{{ movieCtrl.getImageURL(image,'w300') }}" ng-repeat="image in movieCtrl.movie.images.backdrops" />
+	</div>
 </div>
