@@ -13,7 +13,7 @@ Ex : utiliser du lorem ipsum pour les commentaires.
 
 <div class="container page-movie"> 
 
-	<div class="col-xs-12 no-gutters page-movie--top">
+	<div class="col-xs-12 col-lg-6 no-gutters page-movie--top">
 		<div class="page-movie--poster">
 			<img ng-src="{{movieCtrl.getPosterURL('w342')}}" />
 			<img id="poster-movie--ba-player" src="../images/play-button.svg" />
@@ -28,9 +28,9 @@ Ex : utiliser du lorem ipsum pour les commentaires.
 		</div>
 	</div>
 
-	<div class="col-xs-12 page-movie--notes no-gutters">
-		<div class="col-xs-3 page-movie--notes-moyenne">7.8</div>
-		<div class="col-xs-9 page-movie--notes-sources no-gutters">
+	<div class="col-xs-12 col-lg-6 page-movie--notes no-gutters">
+		<div class="col-xs-3 col-lg-12 page-movie--notes-moyenne">7.8</div>
+		<div class="col-xs-9 col-lg-12 page-movie--notes-sources no-gutters">
 			<div class="col-xs-4 page-movie--notes-source page-movie--notes-source1">
 				<div class="page-movie--notes-source-bloc">
 					<div class="page-movie--notes-source-bloc--name">Sens Critique</div>
@@ -106,48 +106,53 @@ Ex : utiliser du lorem ipsum pour les commentaires.
 				</div>
 			</div>
 		</div>
-		<button class="page-movie--casting-more btn">Casting et équipe complets</button>
+		<button class="page-movie--bloc-more page-movie--casting-more btn">Casting et équipe complets</button>
 	</div>
 
 	<div class="col-xs-12 no-gutters page-movie--reviews page-movie--critiques">
 		<div class="page-movie--bloc-header page-movie--reviews-header">Critiques<img id="page-movie--reviews-param" class="page-movie--bloc-param" src="../images/settings.svg"></div>
-		<div class="page-movie--reviews-most age-movie--reviews-most--high"><img src="../images/plus.svg">La critique positive la + populaire</div>
-		<div class="page-movie--reviews-container">
-			<div class="page-movie--reviews-bloc">
-				<h4 class="page-movie--reviews-bloc--title">Lorem Ipsum Dolorem</h4>
-				<div class="page-movie--reviews-bloc--text">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque erat erat, porttitor eu erat eu, auctor ornare orci. Integer ante dui, rhoncus et ex a, sagittis ultrices leo. Vivamus posuere eget urna eget ultrices. Vivamus nulla leo, faucibus a tincidunt et, mattis at nunc. Nunc euismod imperdiet imperdiet..
+		<div class="col-xs-12 col-md-6 no-gutters">
+			<div class="page-movie--reviews-most age-movie--reviews-most--high"><img src="../images/plus.svg">La critique positive la + populaire</div>
+			<div class="page-movie--reviews-container">
+				<div class="page-movie--reviews-bloc">
+					<h4 class="page-movie--reviews-bloc--title">Lorem Ipsum Dolorem</h4>
+					<div class="page-movie--reviews-bloc--text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque erat erat, porttitor eu erat eu, auctor ornare orci. Integer ante dui, rhoncus et ex a, sagittis ultrices leo. Vivamus posuere eget urna eget ultrices. Vivamus nulla leo, faucibus a tincidunt et, mattis at nunc. Nunc euismod imperdiet imperdiet..
+					</div>
 				</div>
-			</div>
-			<div class="page-movie--reviews-details">
-				<img class="page-movie--reviews-details--photo" src="../images/Chris_Hemsworth.jpg" />
-				<div class="page-movie--reviews-details--texts">
-					PseuDOless (4/5) - 1. nov. 16
+				<div class="page-movie--reviews-details">
+					<img class="page-movie--reviews-details--photo" src="../images/Chris_Hemsworth.jpg" />
+					<div class="page-movie--reviews-details--texts">
+						PseuDOless (4/5) - 1. nov. 16
+					</div>
+					<button class="page-movie--reviews-details--source btn">Allociné</button>
 				</div>
-				<button class="page-movie--reviews-details--source btn">Allociné</button>
 			</div>
 		</div>
-		<div class="page-movie--reviews-most age-movie--reviews-most--low"><img src="../images/minus.svg">La critique negative la + populaire</div>
-		<div class="page-movie--reviews-container">
-			<div class="page-movie--reviews-bloc">
-				<h4 class="page-movie--reviews-bloc--title">Lorem Ipsum Dolorem</h4>
-				<div class="page-movie--reviews-bloc--text">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque erat erat, porttitor eu erat eu, auctor ornare orci. Integer ante dui, rhoncus et ex a, sagittis ultrices leo. Vivamus posuere eget urna eget ultrices. Vivamus nulla leo, faucibus a tincidunt et, mattis at nunc. Nunc euismod imperdiet imperdiet..
+		<div class="col-xs-12 col-md-6 no-gutters">
+			<div class="page-movie--reviews-most age-movie--reviews-most--low"><img src="../images/minus.svg">La critique negative la + populaire</div>
+			<div class="page-movie--reviews-container">
+				<div class="page-movie--reviews-bloc">
+					<h4 class="page-movie--reviews-bloc--title">Lorem Ipsum Dolorem</h4>
+					<div class="page-movie--reviews-bloc--text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque erat erat, porttitor eu erat eu, auctor ornare orci. Integer ante dui, rhoncus et ex a, sagittis ultrices leo. Vivamus posuere eget urna eget ultrices. Vivamus nulla leo, faucibus a tincidunt et, mattis at nunc. Nunc euismod imperdiet imperdiet..
+					</div>
+				</div>
+				<div class="page-movie--reviews-details">
+					<img class="page-movie--reviews-details--photo" src="../images/Chris_Hemsworth.jpg" />
+					<div class="page-movie--reviews-details--texts">
+						PseuDOless (4/5) - 1. nov. 16
+					</div>
+					<button class="page-movie--reviews-details--source btn">Allociné</button>
 				</div>
 			</div>
-			<div class="page-movie--reviews-details">
-				<img class="page-movie--reviews-details--photo" src="../images/Chris_Hemsworth.jpg" />
-				<div class="page-movie--reviews-details--texts">
-					PseuDOless (4/5) - 1. nov. 16
-				</div>
-				<button class="page-movie--reviews-details--source btn">Allociné</button>
-			</div>
-		</div>	
+		</div>
+		<button class="page-movie--reviews-more page-movie--bloc-more btn">Toutes les critiques</button>	
 	</div>
 
 	<div class="col-xs-12 no-gutters page-movie--reviews page-movie--com">
 	<div class="page-movie--bloc-header page-movie--reviews-header">Commentaires<img id="page-movie--com-param" class="page-movie--bloc-param" src="../images/settings.svg"></div>
-		<div class="page-movie--reviews-container" ng-repeat="review in movieCtrl.movie.reviews.results">
+		<div class="col-xs-12 no-gutters col-md-6 page-movie--reviews-container" ng-repeat="review in movieCtrl.movie.reviews.results">
 			<div class="page-movie--reviews-bloc"  ng-bind="review.content | limitTo:140">
 			</div>
 			<div class="page-movie--reviews-details">
@@ -158,35 +163,39 @@ Ex : utiliser du lorem ipsum pour les commentaires.
 				<button class="page-movie--reviews-details--source btn">Allociné</button>
 			</div>	
 		</div>
+		<button class="page-movie--reviews-more page-movie--bloc-more btn">Tous les commentaires</button>
 	</div>
 	
 	<div class="col-xs-12 no-gutters page-movie--trivias">
 	<div class="page-movie--bloc-header page-movie--trivias-header">Commentaires<img id="page-movie--trivias-param" class="page-movie--bloc-param" src="../images/settings.svg"></div>
-		<div class="page-movie--trivias-container">
+		<div class="col-xs-12 col-md-6 no-gutters page-movie--trivias-container">
 			<h4 class="page-movie--trivias--title">Lorem Ipsum Dolorem</h4>
 			<div class="page-movie--trivias--text">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque erat erat, porttitor eu erat eu, auctor ornare orci. Integer ante dui, rhoncus et ex a, sagittis ultrices leo.
 			</div>
 			<button class="page-movie--trivias--source btn">Allociné</button>
 		</div>
-		<div class="page-movie--trivias-container">
+		<div class="col-xs-12 col-md-6 no-gutters page-movie--trivias-container">
 			<h4 class="page-movie--trivias--title">Lorem Ipsum Dolorem</h4>
 			<div class="page-movie--trivias--text">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque erat erat, porttitor eu erat eu, auctor ornare orci. Integer ante dui, rhoncus et ex a, sagittis ultrices leo.
 			</div>
 			<button class="page-movie--trivias--source btn">Allociné</button>
 		</div>
-		<div class="page-movie--trivias-container">
+		<div class="col-xs-12 col-md-6 no-gutters page-movie--trivias-container">
 			<h4 class="page-movie--trivias--title">Lorem Ipsum Dolorem</h4>
 			<div class="page-movie--trivias--text">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque erat erat, porttitor eu erat eu, auctor ornare orci. Integer ante dui, rhoncus et ex a, sagittis ultrices leo.
 			</div>
 			<button class="page-movie--trivias--source btn">Allociné</button>
 		</div>
+		<button class="page-movie--trivias-more page-movie--bloc-more btn">Tous les trivias</button>
 	</div>
 
 	<div class="col-xs-12 no-gutters page-movie--medias">
 	<div class="page-movie--bloc-header page-movie--medias-header">Médias<img id="page-movie--medias-param" class="page-movie--bloc-param" src="../images/settings.svg"></div>
-		<img class="col-xs-6 col-sm-4 no-gutters page-movie--medias-img" ng-src="{{ movieCtrl.getImageURL(image,'w300') }}" ng-repeat="image in movieCtrl.movie.images.backdrops" />
+		<div class="col-xs-6 col-sm-4 col-lg-3 no-gutters page-movie--medias-img" ng-repeat="image in movieCtrl.movie.images.backdrops">
+			<img  ng-src="{{ movieCtrl.getImageURL(image,'w300') }}"/>
+		</div>
 	</div>
 </div>

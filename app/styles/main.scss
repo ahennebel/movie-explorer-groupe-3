@@ -149,7 +149,6 @@ $h6: 12px;
 
 .page-movie--notes {
   @include flex-center(b);
-  width: 100%;
   margin-bottom: 24px;
   text-align: center;
   &-moyenne {
@@ -211,11 +210,11 @@ $h6: 12px;
 }
 
 .page-movie--casting {
+  //margin-bottom: 26px;
+  text-align: center;
   &-header {
     margin-bottom: 14px;
   }
-  margin-bottom: 26px;
-  text-align: center;
   &-actors {
     margin-left: -15px;
     margin-right: -15px;
@@ -238,7 +237,7 @@ $h6: 12px;
 }
 
 .page-movie--reviews {
-  margin-bottom: 8px;
+  //margin-bottom: 8px;
   &-header {
     margin-bottom: 18px;
   }
@@ -272,10 +271,13 @@ $h6: 12px;
       font-size: $h6;
     }
   }
+  &-more {
+    margin-top: -2px;
+  }
 }
 
 .page-movie--trivias {
-  margin-bottom: 2px;
+  //margin-bottom: 2px;
   &-header {
     margin-bottom: 22px;
   }
@@ -286,6 +288,9 @@ $h6: 12px;
     margin-top: 6px;
     font-size: $h6;
   }
+  &-more {
+    margin-top: -8px;
+  }
 }
 
 .page-movie--medias {
@@ -293,9 +298,15 @@ $h6: 12px;
   &-header {
     margin-bottom: 16px;
   }
-  &-img:hover {
-    cursor: pointer;
-    filter: contrast(75%) grayscale(100%);
+  &-img {
+    padding: 2px;
+    > img {
+      width: 100%;
+      &:hover {
+        cursor: pointer;
+        filter: contrast(75%) grayscale(100%);
+      }
+    }
   }
 }
 
@@ -319,6 +330,13 @@ $h6: 12px;
     cursor: pointer;
     opacity: 0.6;
   }
+}
+
+.page-movie--bloc-more {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
 }
 
 
@@ -372,6 +390,22 @@ background-color: rgba(0, 0, 0, 0.5);
     background: orange;
     color: white;
   }
+
+  .page-movie--notes {
+    &-source-bloc--name {
+      min-height: 30px;
+    }
+  }
+
+  .page-movie--reviews-most {
+    justify-content: center;
+  }
+  .page-movie--reviews-container,
+  .page-movie--trivias-container {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+
 }
 
 /*****************************************************************/
@@ -384,5 +418,25 @@ background-color: rgba(0, 0, 0, 0.5);
     padding: 2px 5px;
     background: yellow;
     color: black;
+  }
+
+  .page-movie--casting-actors {
+    margin-bottom: 6px;
+    overflow-x: auto;
+    &-container {
+      width: 100%;
+    }
+    &--bloc {
+      float: initial;
+      margin-bottom: 10px;
+    }
+  }
+
+  .page-movie--notes {
+    display: block;
+    &-moyenne {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
   }
 }

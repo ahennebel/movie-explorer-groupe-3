@@ -106,7 +106,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
   margin-bottom: 24px;
   text-align: center; }
   .page-movie--notes-moyenne {
@@ -163,7 +162,6 @@
           opacity: 0.6; }
 
 .page-movie--casting {
-  margin-bottom: 26px;
   text-align: center; }
   .page-movie--casting-header {
     margin-bottom: 14px; }
@@ -183,54 +181,66 @@
         width: 135px;
         margin-bottom: 4px; }
 
-.page-movie--reviews {
-  margin-bottom: 8px; }
-  .page-movie--reviews-header {
-    margin-bottom: 18px; }
-  .page-movie--reviews-most {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 10px;
-    font-size: 18px; }
-    .page-movie--reviews-most > img {
-      height: 20px;
-      margin-right: 10px; }
-  .page-movie--reviews-container {
-    margin-bottom: 18px; }
-  .page-movie--reviews-bloc {
-    border: solid 2px #CCC;
-    padding: 6px 10px 10px; }
-  .page-movie--reviews-details {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 6px; }
-    .page-movie--reviews-details--photo {
-      height: 30px; }
-    .page-movie--reviews-details--texts {
-      flex: 1;
-      padding: 6px; }
-    .page-movie--reviews-details--source {
-      font-size: 12px; }
+.page-movie--reviews-header {
+  margin-bottom: 18px; }
 
-.page-movie--trivias {
-  margin-bottom: 2px; }
-  .page-movie--trivias-header {
-    margin-bottom: 22px; }
-  .page-movie--trivias-container {
-    margin-bottom: 24px; }
-  .page-movie--trivias--source {
-    margin-top: 6px;
+.page-movie--reviews-most {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 18px; }
+  .page-movie--reviews-most > img {
+    height: 20px;
+    margin-right: 10px; }
+
+.page-movie--reviews-container {
+  margin-bottom: 18px; }
+
+.page-movie--reviews-bloc {
+  border: solid 2px #CCC;
+  padding: 6px 10px 10px; }
+
+.page-movie--reviews-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 6px; }
+  .page-movie--reviews-details--photo {
+    height: 30px; }
+  .page-movie--reviews-details--texts {
+    flex: 1;
+    padding: 6px; }
+  .page-movie--reviews-details--source {
     font-size: 12px; }
+
+.page-movie--reviews-more {
+  margin-top: -2px; }
+
+.page-movie--trivias-header {
+  margin-bottom: 22px; }
+
+.page-movie--trivias-container {
+  margin-bottom: 24px; }
+
+.page-movie--trivias--source {
+  margin-top: 6px;
+  font-size: 12px; }
+
+.page-movie--trivias-more {
+  margin-top: -8px; }
 
 .page-movie--medias {
   margin-bottom: 26px; }
   .page-movie--medias-header {
     margin-bottom: 16px; }
-  .page-movie--medias-img:hover {
-    cursor: pointer;
-    filter: contrast(75%) grayscale(100%); }
+  .page-movie--medias-img {
+    padding: 2px; }
+    .page-movie--medias-img > img {
+      width: 100%; }
+      .page-movie--medias-img > img:hover {
+        cursor: pointer;
+        filter: contrast(75%) grayscale(100%); }
 
 .page-movie--bloc-header {
   position: relative;
@@ -251,6 +261,12 @@
   .page-movie--bloc-param:hover {
     cursor: pointer;
     opacity: 0.6; }
+
+.page-movie--bloc-more {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px; }
 
 /* Page Parameters Style
 ***************************************************/
@@ -289,7 +305,15 @@ fieldset legend {
     margin-left: 10px;
     padding: 2px 5px;
     background: orange;
-    color: white; } }
+    color: white; }
+  .page-movie--notes-source-bloc--name {
+    min-height: 30px; }
+  .page-movie--reviews-most {
+    justify-content: center; }
+  .page-movie--reviews-container,
+  .page-movie--trivias-container {
+    padding-left: 7px;
+    padding-right: 7px; } }
 
 /*****************************************************************/
 /* LarGe devices LG (large desktops, 1200px and up)              */
@@ -300,4 +324,17 @@ fieldset legend {
     margin-left: 10px;
     padding: 2px 5px;
     background: yellow;
-    color: black; } }
+    color: black; }
+  .page-movie--casting-actors {
+    margin-bottom: 6px;
+    overflow-x: auto; }
+    .page-movie--casting-actors-container {
+      width: 100%; }
+    .page-movie--casting-actors--bloc {
+      float: initial;
+      margin-bottom: 10px; }
+  .page-movie--notes {
+    display: block; }
+    .page-movie--notes-moyenne {
+      padding-top: 15px;
+      padding-bottom: 15px; } }
