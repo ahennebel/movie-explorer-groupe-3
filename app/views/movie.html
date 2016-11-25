@@ -109,8 +109,8 @@ Ex : utiliser du lorem ipsum pour les commentaires.
 		<button class="page-movie--casting-more btn">Casting et équipe complets</button>
 	</div>
 
-	<div class="col-xs-12 no-gutters page-movie--reviews">
-		<div class="page-movie--bloc-header page-movie--reviews">reviews<img id="page-movie--reviews-param" class="page-movie--bloc-param" src="../images/settings.svg"></div>
+	<div class="col-xs-12 no-gutters page-movie--reviews page-movie--critiques">
+		<div class="page-movie--bloc-header page-movie--reviews-header">Critiques<img id="page-movie--reviews-param" class="page-movie--bloc-param" src="../images/settings.svg"></div>
 		<div class="page-movie--reviews-most age-movie--reviews-most--high"><img src="../images/plus.svg">La critique positive la + populaire</div>
 		<div class="page-movie--reviews-container">
 			<div class="page-movie--reviews-bloc">
@@ -145,8 +145,8 @@ Ex : utiliser du lorem ipsum pour les commentaires.
 		</div>	
 	</div>
 
-	<div class="col-xs-12 no-gutters page-movie--com">
-	<div class="page-movie--bloc-header page-movie--com">Commentaires<img id="page-movie--com-param" class="page-movie--bloc-param" src="../images/settings.svg"></div>
+	<div class="col-xs-12 no-gutters page-movie--reviews page-movie--com">
+	<div class="page-movie--bloc-header page-movie--reviews-header">Commentaires<img id="page-movie--com-param" class="page-movie--bloc-param" src="../images/settings.svg"></div>
 		<div class="page-movie--reviews-container" ng-repeat="review in movieCtrl.movie.reviews.results">
 			<div class="page-movie--reviews-bloc"  ng-bind="review.content | limitTo:140">
 			</div>
@@ -161,7 +161,7 @@ Ex : utiliser du lorem ipsum pour les commentaires.
 	</div>
 	
 	<div class="col-xs-12 no-gutters page-movie--trivias">
-	<div class="page-movie--bloc-header page-movie--trivias">Commentaires<img id="page-movie--trivias-param" class="page-movie--bloc-param" src="../images/settings.svg"></div>
+	<div class="page-movie--bloc-header page-movie--trivias-header">Commentaires<img id="page-movie--trivias-param" class="page-movie--bloc-param" src="../images/settings.svg"></div>
 		<div class="page-movie--trivias-container">
 			<h4 class="page-movie--trivias--title">Lorem Ipsum Dolorem</h4>
 			<div class="page-movie--trivias--text">
@@ -186,7 +186,7 @@ Ex : utiliser du lorem ipsum pour les commentaires.
 	</div>
 
 	<div class="col-xs-12 no-gutters page-movie--medias">
-	<div class="page-movie--bloc-header page-movie--medias">Médias<img id="page-movie--medias-param" class="page-movie--bloc-param" src="../images/settings.svg"></div>
+	<div class="page-movie--bloc-header page-movie--medias-header">Médias<img id="page-movie--medias-param" class="page-movie--bloc-param" src="../images/settings.svg"></div>
 		<img class="col-xs-6 col-sm-4 no-gutters page-movie--medias-img" ng-src="{{ movieCtrl.getImageURL(image,'w300') }}" ng-repeat="image in movieCtrl.movie.images.backdrops" />
 	</div>
 </div>

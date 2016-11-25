@@ -109,6 +109,7 @@ $h6: 12px;
 .page-movie {
   &--top {
     padding-top: 12px;
+    margin-bottom: 18px;
   }
   &--poster {
     position: relative;
@@ -148,7 +149,8 @@ $h6: 12px;
 
 .page-movie--notes {
   @include flex-center(b);
-  width: 100;
+  width: 100%;
+  margin-bottom: 24px;
   text-align: center;
   &-moyenne {
     font-size: $h1;
@@ -174,6 +176,7 @@ $h6: 12px;
 }
 
 .page-movie--descri {
+  margin-bottom: 26px;
   &-text {
     border: solid 2px $color-gray-lighter;
     padding: 10px;
@@ -195,7 +198,7 @@ $h6: 12px;
     }
     &-param {
       @include flex-center(b);
-      padding: 10px;
+      padding: 4px 10px;
       & > img {
         height: 24px;
         &:hover {
@@ -208,11 +211,15 @@ $h6: 12px;
 }
 
 .page-movie--casting {
+  &-header {
+    margin-bottom: 14px;
+  }
+  margin-bottom: 26px;
   text-align: center;
-  overflow: none;
   &-actors {
     margin-left: -15px;
     margin-right: -15px;
+    margin-bottom: 16px;
     padding: 0 6px;
     overflow-x: scroll;
     &-container {
@@ -224,18 +231,28 @@ $h6: 12px;
       padding: 0 8px;
       &-photo {
         width: 135px;
+        margin-bottom: 4px;
       }
     }
   }
 }
 
 .page-movie--reviews {
+  margin-bottom: 8px;
+  &-header {
+    margin-bottom: 18px;
+  }
   &-most {
     @include flex-center(v);
+    margin-bottom: 10px;
+    font-size: $h4;
     & > img {
       height: 20px;
-      margin-right: 8px;
+      margin-right: 10px;
     }
+  }
+  &-container {
+    margin-bottom: 18px;
   }
   &-bloc {
     border: solid 2px $color-gray-lighter;
@@ -243,6 +260,7 @@ $h6: 12px;
   }
   &-details {
     @include flex-center(v);
+    margin-top: 6px;
     &--photo {
       height: 30px;
     }
@@ -257,8 +275,27 @@ $h6: 12px;
 }
 
 .page-movie--trivias {
+  margin-bottom: 2px;
+  &-header {
+    margin-bottom: 22px;
+  }
+  &-container {
+    margin-bottom: 24px;
+  }
   &--source {
+    margin-top: 6px;
     font-size: $h6;
+  }
+}
+
+.page-movie--medias {
+  margin-bottom: 26px;
+  &-header {
+    margin-bottom: 16px;
+  }
+  &-img:hover {
+    cursor: pointer;
+    filter: contrast(75%) grayscale(100%);
   }
 }
 
