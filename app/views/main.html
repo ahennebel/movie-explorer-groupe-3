@@ -4,11 +4,33 @@ Pour afficher une propriété du film il faut utliser la variable movie, ex : mo
 Ce template est associé à un controleur nommé main (voir app.js).
 Ce fichier modifié/complété pour construire n'importe quelle structure html/css.
 -->
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Accueil</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
 <div class="container page-home-logged">
+	<div class="row"><h2 class="paratitre col-xs-12 col-sm-offset-1 col-sm-10 col-lg-offset-2 col-lg-8">Films à l'affiche</h2></div>
 	<div class="movie-list">
 	  <div class="movie-item" ng-repeat="movie in main.movies track by movie.id">
 	    <a ng-href="#/movie/{{movie.id}}"><div ng-bind="movie.title"></div></a>
-	    <div ng-bind="movie.overview"></div>
+	  </div>
+	</div>
+	<div class="row"><h2 class="paratitre col-xs-12 col-sm-offset-1 col-sm-10 col-lg-offset-2 col-lg-8">Suggestions de films</h2></div>
+	<div class="movie-list">
+	  <div class="movie-item" ng-repeat="movie in main.movies track by movie.id">
+	    <a ng-href="#/movie/{{movie.id}}"><div ng-bind="movie.title"></div></a>
+	  </div>
+	</div>
+	<div class="row"><h2 class="paratitre col-xs-12 col-sm-offset-1 col-sm-10 col-lg-offset-2 col-lg-8">Derniers films consultés</h2></div>
+	<div class="movie-list">
+	  <div class="movie-item" ng-repeat="movie in main.movies track by movie.id">
+	    <a ng-href="#/movie/{{movie.id}}"><div ng-bind="movie.title"></div></a>
 	  </div>
 	</div>
 </div>
