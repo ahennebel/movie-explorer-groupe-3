@@ -24,6 +24,11 @@
 
 /* Home Style 
 *************************************************/
+div h2 {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center; }
+
 .movie-item {
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
