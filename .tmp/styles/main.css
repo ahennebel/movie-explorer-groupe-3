@@ -279,6 +279,54 @@ div h2 {
   margin-right: auto;
   margin-bottom: 24px; }
 
+/* Page Casting Style
+***************************************************/
+.page-casting-header {
+  position: relative;
+  margin-bottom: 5px;
+  padding: 8px 0;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  background-color: #666; }
+  .page-casting-header-param {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    height: 30px;
+    transform: translateY(-50%); }
+    .page-casting-header-param:hover {
+      cursor: pointer;
+      opacity: 0.6; }
+
+.page-casting-list {
+  margin-bottom: 10px; }
+  .page-casting-list-title {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #CCC; }
+  .page-casting-list-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-top: solid 1px #CCC;
+    border-bottom: solid 1px #CCC; }
+    .page-casting-list-row--photo {
+      height: 45px;
+      margin-right: 15px; }
+      .page-casting-list-row--photo > img {
+        height: 100%; }
+    .page-casting-list-row--role {
+      margin-right: 15px; }
+    .page-casting-list-row--name {
+      flex: 1; }
+    .page-casting-list-row--source {
+      font-size: 12px; }
+    .page-casting-list-row:last-child {
+      border-bottom: solid 2px #CCC; }
+
 /* Page Parameters Style
 ***************************************************/
 div h2 {
