@@ -1,5 +1,9 @@
-/* Variables
+/* Variables & Custom Classes
 *************************************************/
+.no-gutters {
+  padding-right: 0;
+  padding-left: 0; }
+
 /* Mixins 
 *************************************************/
 /*****************************************************************/
@@ -56,10 +60,140 @@
 /* Page Movie Style 
 *************************************************/
 .page-movie-header {
+  display: inline-block;
   width: 100%;
-  height: 100px;
   background: url(images/bg.jpg) no-repeat center center;
   background-size: cover; }
+  .page-movie-header--titles {
+    margin: 36px 10px 64px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 3rem black; }
+
+.page-movie--top {
+  padding-top: 12px; }
+
+.page-movie--poster {
+  position: relative;
+  display: inline-block;
+  float: left;
+  height: 240px;
+  margin-top: -36px;
+  border: solid 4px white; }
+  .page-movie--poster > img {
+    height: 100%; }
+  .page-movie--poster > #poster-movie--ba-player {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    height: 36px; }
+    .page-movie--poster > #poster-movie--ba-player:hover {
+      cursor: pointer; }
+
+.page-movie--essentials {
+  display: inline-block;
+  width: calc(100% - 163px);
+  padding: 0 15px; }
+  .page-movie--essentials > p {
+    margin-bottom: 6px;
+    word-wrap: break-word; }
+    .page-movie--essentials > p > span:not(:last-child):after {
+      content: ", "; }
+
+.page-movie--notes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100;
+  text-align: center; }
+  .page-movie--notes-moyenne {
+    font-size: 36px; }
+  .page-movie--notes-source {
+    padding-left: 4px;
+    padding-right: 4px; }
+    .page-movie--notes-source-bloc {
+      background-color: #CCC; }
+      .page-movie--notes-source-bloc--name {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #AAA;
+        padding: 4px;
+        min-height: 48px; }
+      .page-movie--notes-source-bloc--note {
+        padding: 6px;
+        font-size: 18px; }
+
+.page-movie--descri-text {
+  border: solid 2px #CCC;
+  padding: 10px; }
+
+.page-movie--descri-sources {
+  display: flex;
+  flex-direction: row; }
+
+.page-movie--descri-source {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  text-align: center;
+  background-color: #CCC; }
+  .page-movie--descri-source:hover {
+    cursor: pointer;
+    background-color: #AAA; }
+  .page-movie--descri-source-param {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; }
+    .page-movie--descri-source-param > img {
+      height: 24px; }
+      .page-movie--descri-source-param > img:hover {
+        cursor: pointer;
+        opacity: 0.6; }
+
+.page-movie--bloc-header {
+  position: relative;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 4px 0;
+  text-align: center;
+  font-size: 24px;
+  color: black;
+  background-color: #666; }
+
+.page-movie--bloc-param {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  height: 24px;
+  transform: translateY(-50%); }
+  .page-movie--bloc-param:hover {
+    cursor: pointer;
+    opacity: 0.6; }
+
+/* Page Parameters Style
+***************************************************/
+div h2 {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+fieldset legend {
+  font-weight: bold; }
+
+#password, #mail {
+  border: 2px black solid;
+  border-radius: 10px; }
+  #password .submit, #mail .submit {
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3); }
 
 /*****************************************************************/
 /* SMall devices SM (tablets, 768px and up)                      */

@@ -1,11 +1,41 @@
 @import 'bower_components/bourbon/app/assets/stylesheets/_bourbon.scss';
 
-/* Variables
+/* Variables & Custom Classes
 *************************************************/
 $title-color: #3675db;
+$color-gray-lightest: #EEE;
+$color-gray-lighter: #CCC;
+$color-gray-light: #AAA;
+$color-gray-medium: #888;
+$color-gray-dark: #666;
+$color-gray-darker: #444;
+$color-gray-darkest: #222;
+
+$h1: 36px;
+$h2: 30px;
+$h3: 24px;
+$h4: 18px;
+$h5: 14px;
+$h6: 12px;
+
+
+.no-gutters {
+  padding-right: 0;
+  padding-left: 0;
+}
 
 /* Mixins 
 *************************************************/
+@mixin flex-center($p){ //h > horizontal | v > vertical | b > both
+    display: flex;
+    flex-direction: row;
+    @if $p == h or $p == b {
+      justify-content: center;
+    }
+    @if $p == v or $p == b {
+      align-items: center;
+    }
+}
 
 
 /*****************************************************************/
@@ -64,11 +94,140 @@ $title-color: #3675db;
 /* Page Movie Style 
 *************************************************/
 .page-movie-header {
+  display:inline-block;  
   width: 100%;
-  height: 100px;
   background: url(images/bg.jpg) no-repeat center center;
   background-size: cover;
+  &--titles {
+    margin: 36px 10px 64px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 3rem black;
+  }
 }
+
+.page-movie {
+  &--top {
+    padding-top: 12px;
+  }
+  &--poster {
+    position: relative;
+    display: inline-block;
+    float: left;
+    height: 240px;
+    //width: 192px;
+    //margin-top: -24px;
+    margin-top: -36px;
+    border: solid 4px white;
+    & > img {
+      height: 100%;
+    }
+    & > #poster-movie--ba-player {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      height: 36px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  &--essentials {
+    display: inline-block;
+    width: calc(100% - 163px);
+    padding: 0 15px;
+    & > p {
+      margin-bottom: 6px;
+      word-wrap:break-word;
+      & > span:not(:last-child):after {
+        content:", ";
+      }
+    }
+  }
+}
+
+.page-movie--notes {
+  @include flex-center(b);
+  width: 100;
+  text-align: center;
+  &-moyenne {
+    font-size: $h1;
+  }
+  &-source {
+    padding-left: 4px;
+    padding-right: 4px;
+    &-bloc {
+      background-color: $color-gray-lighter;
+      &--name {
+        @include flex-center(b);
+        background-color: $color-gray-light;
+        padding: 4px;
+        min-height: 48px;
+      }
+      &--note {
+        padding: 6px;
+        font-size: $h4;
+      }
+    }
+  }  
+}
+
+.page-movie--descri {
+  &-text {
+    border: solid 2px $color-gray-lighter;
+    padding: 10px;
+  }
+  &-sources {
+    display: flex;
+    flex-direction: row;
+  }
+  &-source {
+    flex: 1;
+    @include flex-center(b);
+    padding: 4px;
+    text-align: center;
+    background-color: $color-gray-lighter;
+    &:hover {
+      cursor: pointer;
+      background-color: $color-gray-light;
+    }
+    &-param {
+      @include flex-center(b);
+      padding: 10px;
+      & > img {
+        height: 24px;
+        &:hover {
+          cursor: pointer;
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+}
+
+.page-movie--bloc-header {
+  position: relative;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 4px 0;
+  text-align: center;
+  font-size: $h3;
+  color: black;
+  background-color: $color-gray-dark;
+}
+.page-movie--bloc-param {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  height: 24px;
+  transform: translateY(-50%);
+  &:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+}
+
+
 
 /* Page Parameters Style
 ***************************************************/

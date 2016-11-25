@@ -5,12 +5,70 @@ Ex : utiliser du lorem ipsum pour les commentaires.
 -->
 
 <header class="page-movie-header" style="background-image:url({{ movieCtrl.getImageURL(movieCtrl.movie.images.backdrops[4],'original') }})">
+	<div class="page-movie-header--titles">
+		<h1 class="page-movie-header--title-vf" ng-bind="movieCtrl.movie.title"></h1>
+		<h3 class="page-movie-header--title-vo" ng-bind="movieCtrl.movie.original_title"></h3>
+	</div>
 </header>
-<div class="container page-movie">
-	<img ng-src="{{movieCtrl.getPosterURL('w185')}}" />
-	<div ng-bind="movieCtrl.movie.title"></div>
-	<div ng-bind="movieCtrl.movie.overview"></div>
-	    <button type="button" class="btn btn-primary">Samsung</button>
+
+<div class="container page-movie"> 
+
+	<div class="col-xs-12 no-gutters page-movie--top">
+		<div class="page-movie--poster">
+			<img ng-src="{{movieCtrl.getPosterURL('w342')}}" />
+			<img id="poster-movie--ba-player" src="../images/play-button.svg" />
+		</div>
+		<div class="page-movie--essentials">
+			<p> de <em>Scott Derrickson</em></p>
+			<!-- <p>Scénaristes</p> -->
+			<p><span ng-repeat="genre in movieCtrl.movie.genres"><em>{{genre.name}}</em></span></p>
+			<p><em>{{movieCtrl.movie.runtime}}</em> minutes</p>
+			<p><span><em>{{movieCtrl.movie.release_date | date: 'd MMM y'}}</em> <small>(US)</small></span></p>
+			<p>Avec <span><em>Benedict Cumberbatch</em></span><span><em>Tilda Swinton</em></span><span><em>Benedict Wong</em></span> ...</p>
+		</div>
+	</div>
+
+	<div class="col-xs-12 page-movie--notes no-gutters">
+		<div class="col-xs-3 page-movie--notes-moyenne">7.8</div>
+		<div class="col-xs-9 page-movie--notes-sources no-gutters">
+			<div class="col-xs-4 page-movie--notes-source page-movie--notes-source1">
+				<div class="page-movie--notes-source-bloc">
+					<div class="page-movie--notes-source-bloc--name">Sens Critique</div>
+					<div class="page-movie--notes-source-bloc--note">8.1</div>
+				</div>
+			</div>
+			<div class="col-xs-4 page-movie--notes-source page-movie--notes-source2">
+				<div class="page-movie--notes-source-bloc">
+					<div class="page-movie--notes-source-bloc--name">Rotten Tomatoes</div>
+					<div class="page-movie--notes-source-bloc--note">19%</div>
+				</div>
+			</div>
+			<div class="col-xs-4 page-movie--notes-source page-movie--notes-source3">
+				<div class="page-movie--notes-source-bloc">
+					<div class="page-movie--notes-source-bloc--name">Allociné</div>
+					<div class="page-movie--notes-source-bloc--note">3.9</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	<div class="col-xs-12 no-gutters page-movie--descri">
+		<div class="page-movie--descri-text" ng-bind="movieCtrl.movie.overview"></div>
+		<div class="page-movie--descri-sources">
+			<div class="page-movie--descri-source page-movie--descri-source1">Sens Critique</div>
+			<div class="page-movie--descri-source page-movie--descri-source2">Rotten Tomatoes</div>
+			<div class="page-movie--descri-source page-movie--descri-source3">Allociné</div>
+			<div class="page-movie--descri-source-param">
+				<img id="poster-movie--descri-param" src="../images/settings.svg" />
+			</div>
+		</div>
+	</div>
+
+	<div class="col-xs-12 no-gutters page-movie--casting">
+		<div class="page-movie--bloc-header page-movie--casting-header">Casting<img id="poster-movie--casting-param" class="page-movie--bloc-param" src="../images/settings.svg"></div>
+
+	</div>
+
 	<div class="review-list">
 	    <div class="review" ng-repeat="review in movieCtrl.movie.reviews.results">
 	        <div>Author : <span ng-bind="review.author"></span></div>
@@ -21,4 +79,5 @@ Ex : utiliser du lorem ipsum pour les commentaires.
 	<div class="image-list">
 	    <img ng-src="{{ movieCtrl.getImageURL(image,'w300') }}" ng-repeat="image in movieCtrl.movie.images.backdrops" />
 	</div>
+
 </div>
