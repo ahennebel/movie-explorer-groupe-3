@@ -8,7 +8,7 @@
  * Controller of the movieExplorerApp
  */
 angular.module('movieExplorerApp')
-  .controller('MainCtrl', function (movies) {
+  .controller('MainCtrl', function ($routeParams, movies) {
     var ctrl = this;
 
     ctrl.movies = [];
@@ -17,4 +17,25 @@ angular.module('movieExplorerApp')
     {
       ctrl.movies = result;
     });
+
+    movies.getMovie($routeParams.movieId).then(function(result)
+    {
+      ctrl.doctor = result;
+    });
+
+    movies.getConfiguration().then(function(result){
+      ctrl.configuration = result;
+    });
+
+
+    ctrl.getPosterURL = function(size)
+    {
+      if(ctrl.configuration)
+      {
+        return ctrl.configuration.images.secure_base_url + size + ctrl.doctor.poster_path;
+      } else {
+        return null;
+      }
+    }
+
   });

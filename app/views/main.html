@@ -1,44 +1,37 @@
-<!-- Ce fichier HTML est le template de la page d'accueil :
-Le code ci-dessous affiche une liste de films grâce à la balise ng-repeat.
-Pour afficher une propriété du film il faut utliser la variable movie, ex : movie.title.
-Ce template est associé à un controleur nommé main (voir app.js).
-Ce fichier modifié/complété pour construire n'importe quelle structure html/css.
--->
-<!DOCTYPE html>
-
-<html>
-
-  <head>
-    <title>Accueil</title>
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-  </head>
-
-<div class="container page-home-logged">
-	<div class="row"><h2 class="col-xs-12 col-lg-6">Films à l'affiche</h2></div>
-	<div class="page-home-logged--movie">
-		<div class="page-home-logged--movie--bloc">
-			<a ng-href="#/movie/284052"><img class="page-home-logged--movie--bloc-photo" src="../images/Doctor_strange.jpg" /></a>
-			<a ng-href="#/movie/284052"><img class="page-home-logged--movie--bloc-photo" src="../images/Doctor_strange.jpg" /></a>
-			<a ng-href="#/movie/284052"><img class="page-home-logged--movie--bloc-photo" src="../images/Doctor_strange.jpg" /></a>
-			<a ng-href="#/movie/284052"><img class="page-home-logged--movie--bloc-photo" src="../images/Doctor_strange.jpg" /></a>
-			<a ng-href="#/movie/284052"><img class="page-home-logged--movie--bloc-photo" src="../images/Doctor_strange.jpg" /></a>
-			<a ng-href="#/movie/284052"><img class="page-home-logged--movie--bloc-photo" src="../images/Doctor_strange.jpg" /></a>
-		</div>
+<div class="wrapper">
+<div class="container"> 	  		    
+	<div class="logging row">
+		<a ng-href="#/logged"><button class="submit btn col-xs-offset-3 col-xs-6 col-sm-offset-2 col-sm-3 col-lg-offset-1 col-lg-4">Inscription</button></a>
+		<a ng-href="#/logged"><button class="submit btn col-xs-offset-3 col-xs-6 col-sm-offset-2 col-sm-3 col-lg-offset-1 col-lg-4">Connexion </button></a>
 	</div>
 
-	<div class="row"><h2 class="col-xs-12 col-lg-6">Suggestions de films</h2></div>
-	<div class="page-home-logged--movie">
-		<div class="page-home-logged--movie--bloc">
-			<a ng-href="#/movie/284052"><img class="page-home-logged--movie--bloc-photo" src="../images/Doctor_strange.jpg" /></a>
-		</div>
-	</div>
-
-	<div class="row"><h2 class="col-xs-12 col-lg-6">Derniers films consultés</h2></div>
-	<div class="page-home-logged--movie">
-		<div class="page-home-logged--movie--bloc">
-			<a ng-href="#/movie/284052"><img class="page-home-logged--movie--bloc-photo" src="../images/Doctor_strange.jpg" /></a>
-
-		</div>
-	</div>
+	<div class="row">
+		<section>
+			<article>
+				<div class="preview col-xs-12 col-sm-4 col-lg-3">
+				<p>Illud tamen clausos vehementer angebat quod captis navigiis, quae frumenta vehebant per flumen, Isauri quidem alimentorum copiis adfluebant, ipsi vero solitarum rerum cibos iam consumendo inediae propinquantis aerumnas exitialis horrebant.</p>				
+				</div>
+			</article>
+		</section>
+			<section>
+			<article>
+				<div class="preview col-xs-12 col-sm-4 col-lg-offset-1 col-lg-3">
+				<p>Illud tamen clausos vehementer angebat quod captis navigiis, quae frumenta vehebant per flumen, Isauri quidem alimentorum copiis adfluebant, ipsi vero solitarum rerum cibos iam consumendo inediae propinquantis aerumnas exitialis horrebant.</p>
+				
+				</div>
+			</article>
+		</section>
+		<section>
+			<article>
+				<div class="preview col-xs-12 col-sm-4 col-lg-offset-1 col-lg-3">
+				<p>Illud tamen clausos vehementer angebat quod captis navigiis, quae frumenta vehebant per flumen, Isauri quidem alimentorum copiis adfluebant, ipsi vero solitarum rerum cibos iam consumendo inediae propinquantis aerumnas exitialis horrebant.</p>			
+				</div>
+			</article>
+		</section>
+	</div>	
+	<div class="logging_bot row">   
+		<a ng-href="#/logged"><button type="submit" value="Inscription" class="submit btn col-xs-offset-3 col-xs-6 col-sm-offset-2 col-sm-3 col-lg-offset-1 col-lg-4">Inscription</button></a>
+		<a ng-href="#/logged"><button type="submit" class="submit btn col-xs-offset-3 col-xs-6 col-sm-offset-2 col-sm-3 col-lg-offset-1 col-lg-4">Connexion</button></a>	    	    
+	</div>	
+</div>     
 </div>

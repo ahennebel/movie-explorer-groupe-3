@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Variables & Custom Classes
 *************************************************/
 .no-gutters {
@@ -16,7 +17,7 @@ a:active {
 /* eXtra Small devices XS (phones, less than 768px)              */
 /* No media query since this is the default in Bootstrap         */
 /*****************************************************************/
-.navbar-brand:after {
+.navbar-logo:after {
   content: "XS";
   margin-left: 10px;
   padding: 2px 5px;
@@ -27,6 +28,21 @@ a:active {
 *************************************************/
 .navbar {
   margin-bottom: 0; }
+  .navbar > .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .navbar-header-long {
+    flex: 1; }
+  .navbar-param {
+    float: right; }
+    .navbar-param > img {
+      height: 24px; }
+  .navbar-search-input-container {
+    width: calc(100% - 120px); }
+
+.form-control {
+  height: 24px; }
 
 /* Home Style 
 *************************************************/
@@ -344,22 +360,66 @@ fieldset legend {
     color: white;
     background-color: rgba(0, 0, 0, 0.3); }
 
+/* Page Home Loggé Style
+***************************************************/
+.page-home-logged--movie--bloc-link {
+  padding: 5px; }
+
+.page-home-logged--movie--bloc-photo {
+  width: 100%; }
+
+/* Accueil Non loggé Style
+*******************************************************/
+.wrapper {
+  background-image: url("../images/mozaique.jpg");
+  background-size: cover;
+  padding-top: 30px;
+  padding-bottom: 15vh; }
+
+.preview {
+  height: 47vh;
+  background-color: #666;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  border: solid white 1px;
+  position: relative; }
+  .preview > p {
+    background-color: white;
+    opacity: 0.8;
+    padding-left: 5%;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+
+.logging {
+  margin-top: 45vh;
+  margin-bottom: 10vh; }
+  .logging > button {
+    margin-top: 15px;
+    margin-bottom: 15px; }
+
+.logging_bot {
+  display: none; }
+
 /*****************************************************************/
 /* SMall devices SM (tablets, 768px and up)                      */
 /*****************************************************************/
 @media screen and (min-width: 768px) {
-  .navbar-brand:after {
+  .navbar-logo:after {
     content: "SM";
     margin-left: 10px;
     padding: 2px 5px;
     background: red;
-    color: white; } }
+    color: white; }
+  .logging {
+    margin-top: 70vh;
+    margin-bottom: 10vh; } }
 
 /*****************************************************************/
 /* MeDium devices MD (desktops, 992px and up)                    */
 /*****************************************************************/
 @media screen and (min-width: 992px) {
-  .navbar-brand:after {
+  .navbar-logo:after {
     content: "MD";
     margin-left: 10px;
     padding: 2px 5px;
@@ -372,13 +432,16 @@ fieldset legend {
   .page-movie--reviews-container,
   .page-movie--trivias-container {
     padding-left: 7px;
-    padding-right: 7px; } }
+    padding-right: 7px; }
+  .logging_bot {
+    display: block;
+    margin-top: 7vh; } }
 
 /*****************************************************************/
 /* LarGe devices LG (large desktops, 1200px and up)              */
 /*****************************************************************/
 @media screen and (min-width: 1200px) {
-  .navbar-brand:after {
+  .navbar-logo:after {
     content: "LG";
     margin-left: 10px;
     padding: 2px 5px;

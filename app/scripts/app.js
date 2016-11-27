@@ -24,6 +24,11 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
+      .when('/logged', {
+        templateUrl: 'views/main-logged.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
+      })
       .when('/movie/:movieId', {
         templateUrl: 'views/movie.html',
         controller: 'MovieCtrl',

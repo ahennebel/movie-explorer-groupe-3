@@ -49,7 +49,7 @@ a:active {
 /* eXtra Small devices XS (phones, less than 768px)              */
 /* No media query since this is the default in Bootstrap         */
 /*****************************************************************/
-.navbar-brand:after {
+.navbar-logo:after {
   content:"XS";
   margin-left: 10px;
   padding: 2px 5px;
@@ -61,6 +61,25 @@ a:active {
 *************************************************/
 .navbar {
   margin-bottom: 0;
+  & > .container {
+    @include flex-center(v);
+  }
+  &-header-long {
+    flex: 1;
+  }
+  &-param {
+    float: right;
+    & > img {
+      height: 24px;
+    }
+  }
+  &-search-input-container{
+    width: calc(100% - 120px);
+  }
+}
+
+.form-control {
+  height: 24px;
 }
 
 /* Home Style 
@@ -426,7 +445,7 @@ background-color: rgba(0, 0, 0, 0.5);
  #password, #mail{
  	border:2px black solid;
  	border-radius: 10px;
-	 	.submit{
+	 	& .submit{
 	 	border-radius: 10px;
 	 	color:white;
 	 	background-color: rgba(0, 0, 0, 0.3);
@@ -434,55 +453,63 @@ background-color: rgba(0, 0, 0, 0.5);
 
  }
 
-/******************************************************
-****Accueil Non loggé 
+ /* Page Home Loggé Style
+***************************************************/
+.page-home-logged--movie--bloc{
+  &-link {
+    padding: 5px;
+  } 
+  &-photo {
+    width: 100%;
+  }
+}
+
+
+/* Accueil Non loggé Style
 *******************************************************/
-body{
+.wrapper {
   background-image:url("../images/mozaique.jpg");
+  background-size: cover;
+  padding-top: 30px;
+  padding-bottom: 15vh;
 } 
 
- #inscription, #connexion{  
-    .submit{    
-    color:white;
-    background-color: rgba(0, 0, 0, 0.3);
-   }
-
- }
-
 .preview{
-  height: 400px;
+  height: 47vh;
   background-color: $color-gray-dark;
   margin-top: 4%;
   margin-bottom: 2%;
   border: solid white 1px;
   position:relative;
-  
-  }
-.preview p{
-  text-align: bottom;
+  & > p {
   background-color: white;
   opacity: 0.8;
   padding-left: 5%;
   position: absolute;
   bottom:0;
   left:0;
+  }
 }
 
 .logging{
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 45vh;
+  margin-bottom: 10vh;
+  & > button {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
 }
 
 .logging_bot{
-      display : none;
-    }
+  display : none;
+}
 
 
 /*****************************************************************/
 /* SMall devices SM (tablets, 768px and up)                      */
 /*****************************************************************/
 @media screen and (min-width: 768px) {
-  .navbar-brand:after {
+  .navbar-logo:after {
     content:"SM";
     margin-left: 10px;
     padding: 2px 5px;
@@ -491,8 +518,8 @@ body{
   }
 
   .logging{
-  margin-top: 80%;
-  margin-bottom: 30%;
+  margin-top: 70vh;
+  margin-bottom: 10vh;
   }
 }
 
@@ -500,7 +527,7 @@ body{
 /* MeDium devices MD (desktops, 992px and up)                    */
 /*****************************************************************/
 @media screen and (min-width: 992px) {
-  .navbar-brand:after {
+  .navbar-logo:after {
     content:"MD";
     margin-left: 10px;
     padding: 2px 5px;
@@ -525,14 +552,15 @@ body{
 
   .logging_bot{
     display: block;
-    margin-top: 2%;
+    margin-top: 7vh;
+  }
 }
 
 /*****************************************************************/
 /* LarGe devices LG (large desktops, 1200px and up)              */
 /*****************************************************************/
 @media screen and (min-width: 1200px) {
-  .navbar-brand:after {
+  .navbar-logo:after {
     content:"LG";
     margin-left: 10px;
     padding: 2px 5px;

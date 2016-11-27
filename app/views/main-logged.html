@@ -1,0 +1,31 @@
+<!-- Ce fichier HTML est le template de la page d'accueil :
+Le code ci-dessous affiche une liste de films grâce à la balise ng-repeat.
+Pour afficher une propriété du film il faut utliser la variable movie, ex : movie.title.
+Ce template est associé à un controleur nommé main (voir app.js).
+Ce fichier modifié/complété pour construire n'importe quelle structure html/css.
+-->
+
+<div class="container page-home-logged">
+	<div class="row"><h2 class="col-xs-12">Films à l'affiche</h2></div>
+	<div class="page-home-logged--movie">
+		<div class="page-home-logged--movie--bloc"> 
+      		<a ng-repeat="movie in main.movies track by movie.id" ng-href="#/movie/{{movie.id}}" class="col-xs-4 col-sm-3 col-lg-2 no-gutters page-home-logged--movie--bloc-link"><img class="page-home-logged--movie--bloc-photo" src="{{main.getPosterURL('w342')}}" /></a> 
+    	</div> 
+	</div>
+
+	<div class="row"><h2 class="col-xs-12">Suggestions de films</h2></div>
+	<div class="page-home-logged--movie">
+		<div class="page-home-logged--movie--bloc">
+			<a ng-href="#/movie/284052" class="col-xs-4 col-sm-3 col-lg-2 no-gutters page-home-logged--movie--bloc-link"><img class="page-home-logged--movie--bloc-photo" src="{{main.getPosterURL('w342')}}" /></a>
+			<a ng-href="#/movie/284052" class="col-xs-4 col-sm-3 col-lg-2 no-gutters page-home-logged--movie--bloc-link"><img class="page-home-logged--movie--bloc-photo" src="{{main.getPosterURL('w342')}}" /></a>
+		</div>
+	</div>
+
+	<div class="row"><h2 class="col-xs-12">Derniers films consultés</h2></div>
+	<div class="page-home-logged--movie">
+		<div class="page-home-logged--movie--bloc">
+			<a ng-href="#/movie/284052" class="col-xs-4 col-sm-3 col-lg-2 no-gutters page-home-logged--movie--bloc-link"><img class="page-home-logged--movie--bloc-photo" src="{{main.getPosterURL('w342')}}" /></a>
+
+		</div>
+	</div>
+</div>
