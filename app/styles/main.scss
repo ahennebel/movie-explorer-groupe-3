@@ -434,6 +434,49 @@ background-color: rgba(0, 0, 0, 0.5);
 
  }
 
+/******************************************************
+****Accueil Non loggé 
+*******************************************************/
+body{
+  background-image: :url("/img/film.jpg");
+} 
+
+ #inscription, #connexion{  
+    .submit{    
+    color:white;
+    background-color: rgba(0, 0, 0, 0.3);
+   }
+
+ }
+
+.preview{
+  height: 400px;
+  background-color: $color-gray-dark;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  border: solid white 1px;
+  position:relative 
+
+  p{
+  text-align: bottom;
+  background-color: white;
+  opacity: 0.8;
+  padding-left: 5%;
+  position: absolute;
+  bottom:0;
+  left:0;
+  }
+}
+
+.logging{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.logging_bot{
+      display : none;
+    }
+
 
 /*****************************************************************/
 /* SMall devices SM (tablets, 768px and up)                      */
@@ -445,6 +488,11 @@ background-color: rgba(0, 0, 0, 0.5);
     padding: 2px 5px;
     background: red;
     color: white;
+  }
+
+  .logging{
+  margin-top: 80%;
+  margin-bottom: 30%;
   }
 }
 
@@ -475,6 +523,9 @@ background-color: rgba(0, 0, 0, 0.5);
     padding-right: 7px;
   }
 
+  .logging_bot{
+    display: block;
+    margin-top: 2%;
 }
 
 /*****************************************************************/
