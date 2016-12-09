@@ -73,8 +73,19 @@ a:active {
       height: 24px;
     }
   }
-  &-search-input-container{
-    width: calc(100% - 120px);
+  &-search-input {
+    &-text {
+      display: inline-block;
+      width: calc(100% - 45px);
+      height: 24px;
+    }
+    &-container {
+      width: calc(100% - 120px);
+    }
+    &-valid {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
   }
 }
 
@@ -83,10 +94,6 @@ a:active {
   &:hover {
     opacity: 0.6;
   }
-}
-
-.form-control {
-  height: 24px;
 }
 
 /* Home Style 

@@ -9,8 +9,10 @@
  */
 
 angular.module('movieExplorerApp')
-  .controller('SearchCtrl', function ($routeParams, movies) {
+  .controller('SearchCtrl', function ($routeParams, $scope, movies) {
     var ctrl = this;
+
+    $scope.movieName;
 
     ctrl.movies = [];
 

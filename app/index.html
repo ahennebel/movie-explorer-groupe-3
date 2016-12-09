@@ -31,7 +31,7 @@
           <div class="navbar-header navbar-header-long">
             <a class="navbar-param navbar-brand" href="#/parameters"><img src="../images/settings.svg"></a>
             <span class="navbar-param navbar-brand" id="navbar-search-btn"><img src="../images/loupe.svg"></span>
-            <span class="navbar-brand navbar-param navbar-search-input-container"><input type="text" class="form-control" id="navbar-search-input" /></span>
+            <span class="navbar-brand navbar-param navbar-search-input-container" ng-controller="SearchCtrl"><input type="text" class="form-control navbar-search-input-text" id="navbar-search-input" ng-model="movieName" /><a ng-href="#/search/{{movieName}}"><button class="navbar-search-input-valid btn">ok</button></a></span>
           </div>
         </div>
       </div>

@@ -38,16 +38,20 @@ a:active {
     float: right; }
     .navbar-param > img {
       height: 24px; }
+  .navbar-search-input-text {
+    display: inline-block;
+    width: calc(100% - 45px);
+    height: 24px; }
   .navbar-search-input-container {
     width: calc(100% - 120px); }
+  .navbar-search-input-valid {
+    padding-top: 0;
+    padding-bottom: 0; }
 
 #navbar-search-btn {
   cursor: pointer; }
   #navbar-search-btn:hover {
     opacity: 0.6; }
-
-.form-control {
-  height: 24px; }
 
 /* Home Style 
 *************************************************/
