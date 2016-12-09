@@ -7,9 +7,6 @@
  * # movies
  * Service in the movieExplorerApp.
  */
-
-var TMDB_API_KEY = '?api_key=8dc046e0d14c9fa71508b92eeb2c3f11';
- 
 angular.module('movieExplorerApp')
   .service('movies', function ($http,$q) {
     var service = this;
