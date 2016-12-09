@@ -8,8 +8,11 @@
  * Service in the movieExplorerApp.
  */
 
- var TMDB_API_KEY = '?api_key=8dc046e0d14c9fa71508b92eeb2c3f11';
- 
+var TMDB_API_BASE = 'https://api.themoviedb.org/3/',
+    TMDB_API_KEY = '?api_key=8dc046e0d14c9fa71508b92eeb2c3f11',
+    TMDB_API_DETAILS = '&language=fr-Fr&include_adult=false';
+
+
 angular.module('movieExplorerApp')
   .service('movies', function ($http,$q) {
     var service = this;
@@ -44,5 +47,14 @@ angular.module('movieExplorerApp')
         return response.data;
       });
     };
+
+    service.getMoviesByKeyword = function(query)
+    {
+      return $http.get(TMDB_API_BASE+'search/movie/'+TMDB_API_KEY+'&query='+query+TMDB_API_DETAILS).then(function(response)
+      {
+        return response.data.results;
+      });
+    };
+
 
   });

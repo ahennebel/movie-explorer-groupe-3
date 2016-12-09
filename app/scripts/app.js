@@ -39,6 +39,11 @@ angular
         controller: 'MovieCtrl',
         controllerAs: 'movieCtrl'
       })
+      .when('/search/:query/', {
+        templateUrl: 'views/search.html',
+        controller: 'SearchCtrl',
+        controllerAs: 'search'
+      })
       .when('/parameters', {
         templateUrl: 'views/parameters.html',
         // controller: 'MovieCtrl',
@@ -47,5 +52,4 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-
   });

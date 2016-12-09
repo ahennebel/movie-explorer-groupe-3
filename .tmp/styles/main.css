@@ -41,6 +41,11 @@ a:active {
   .navbar-search-input-container {
     width: calc(100% - 120px); }
 
+#navbar-search-btn {
+  cursor: pointer; }
+  #navbar-search-btn:hover {
+    opacity: 0.6; }
+
 .form-control {
   height: 24px; }
 
@@ -363,10 +368,12 @@ fieldset legend {
 /* Page Home Loggé Style
 ***************************************************/
 .page-home-logged--movie--bloc-link {
-  padding: 5px; }
+  padding: 5px;
+  text-align: center; }
 
 .page-home-logged--movie--bloc-photo {
-  width: 100%; }
+  height: 210px;
+  max-width: 100%; }
 
 /* Accueil Non loggé Style
 *******************************************************/
@@ -435,7 +442,9 @@ fieldset legend {
     padding-right: 7px; }
   .logging_bot {
     display: block;
-    margin-top: 7vh; } }
+    margin-top: 7vh; }
+  .page-home-logged--movie--bloc-photo {
+    height: 310px; } }
 
 /*****************************************************************/
 /* LarGe devices LG (large desktops, 1200px and up)              */
@@ -459,4 +468,6 @@ fieldset legend {
     display: block; }
     .page-movie--notes-moyenne {
       padding-top: 15px;
-      padding-bottom: 15px; } }
+      padding-bottom: 15px; }
+  .page-home-logged--movie--bloc-photo {
+    height: 250px; } }
