@@ -12,9 +12,9 @@ angular.module('movieExplorerApp')
   .controller('SearchCtrl', function ($routeParams, $scope, movies) {
     var ctrl = this;
 
-    $scope.movieName;
-
     ctrl.movies = [];
+
+    ctrl.inputIsVisible = false;
 
     movies.getConfiguration().then(function(result){
       ctrl.configuration = result;
@@ -23,6 +23,16 @@ angular.module('movieExplorerApp')
     movies.getMoviesByKeyword($routeParams.query).then(function(result){
       ctrl.movies = result;
     });
+
+    ctrl.toggleInputVisibility = function(){
+      ctrl.inputIsVisible = !ctrl.inputIsVisible;
+    }
+
+    ctrl.getMoviesQuery = function(){
+      if($scope.moviesQuery){ 
+        return "#/search/" + $scope.moviesQuery;
+      }
+    }
 
     ctrl.getQuery = function(){
       return $routeParams.query;

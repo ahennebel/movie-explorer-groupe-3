@@ -14,7 +14,7 @@ var TMDB_API_BASE = 'https://api.themoviedb.org/3/',
 
 
 angular.module('movieExplorerApp')
-  .service('movies', function ($http,$q) {
+  .service('movies', function ($http, $filter, $q) {
     var service = this;
 
     service.getDiscoverMovies = function()
@@ -51,6 +51,16 @@ angular.module('movieExplorerApp')
     service.getMoviesByKeyword = function(query)
     {
       return $http.get(TMDB_API_BASE+'search/movie/'+TMDB_API_KEY+'&query='+query+TMDB_API_DETAILS).then(function(response)
+      {
+        return response.data.results;
+      });
+    };
+
+   service.getDiscoverMoviesAPI = function()
+    {
+      var lastMonthDate = $filter('date')((new Date().getTime() - 2629746000), 'yyyy-MM-dd'); // month in milliseconds
+      var todayDate = $filter('date')(new Date(), 'yyyy-MM-dd');
+      return $http.get(TMDB_API_BASE+'discover/movie/'+TMDB_API_KEY+'&primary_release_date.gte='+lastMonthDate+'&primary_release_date.lte='+todayDate+'&sort_by=popularity.desc'+TMDB_API_DETAILS).then(function(response)
       {
         return response.data.results;
       });

@@ -9,7 +9,7 @@ Ce fichier modifié/complété pour construire n'importe quelle structure html/c
 	<div class="row"><h2 class="col-xs-12">Films à l'affiche</h2></div>
 	<div class="page-home-logged--movie">
 		<div class="page-home-logged--movie--bloc"> 
-      		<a ng-repeat="movie in main.movies track by movie.id" ng-href="#/movie/{{movie.id}}" class="col-xs-4 col-sm-3 col-lg-2 no-gutters page-home-logged--movie--bloc-link"><img class="page-home-logged--movie--bloc-photo" src="{{main.getPosterURL('w342')}}" /></a> 
+      		<a ng-repeat="movie in main.movies track by movie.id" ng-href="#/movie/{{movie.id}}" class="col-xs-4 col-sm-3 col-lg-2 no-gutters page-home-logged--movie--bloc-link"><img class="page-home-logged--movie--bloc-photo" ng-src="{{main.getPosterAPI(movie.poster_path,'w342')}}" /></a> 
     	</div> 
 	</div>
 

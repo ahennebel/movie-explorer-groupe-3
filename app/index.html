@@ -28,10 +28,10 @@
           <div class="navbar-header">
             <a class="navbar-brand navbar-logo" href="#/logged">movieExplorer</a>
           </div>
-          <div class="navbar-header navbar-header-long">
+          <div class="navbar-header navbar-header-long" ng-controller="SearchCtrl as search">
             <a class="navbar-param navbar-brand" href="#/parameters"><img src="../images/settings.svg"></a>
-            <span class="navbar-param navbar-brand" id="navbar-search-btn"><img src="../images/loupe.svg"></span>
-            <span class="navbar-brand navbar-param navbar-search-input-container" ng-controller="SearchCtrl"><input type="text" class="form-control navbar-search-input-text" id="navbar-search-input" ng-model="movieName" /><a ng-href="#/search/{{movieName}}"><button class="navbar-search-input-valid btn">ok</button></a></span>
+            <span class="navbar-param navbar-brand" id="navbar-search-btn" ng-click="search.toggleInputVisibility()"><img src="../images/loupe.svg"></span>
+            <span class="navbar-brand navbar-param navbar-search-input-container" ng-show="search.inputIsVisible" ng-class="{'container-visible': search.inputIsVisible}"><input type="text" class="form-control navbar-search-input-text" id="navbar-search-input" ng-model="moviesQuery" /><a ng-href="{{search.getMoviesQuery()}}"><button class="navbar-search-input-valid btn">ok</button></a></span>
           </div>
         </div>
       </div>
